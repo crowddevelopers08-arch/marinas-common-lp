@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Marina's Clinic — Gastro, Laparoscopic & Bariatric Surgery in Nungambakkam, Chennai</title>
+<meta name="description" content="Hernia, gallstones, acid reflux, piles, obesity and more. Book a focused consultation with Dr. Preethi Mrinalini — advanced laparoscopic & bariatric surgeon, Nungambakkam, Chennai." />
+<link rel="icon" href="https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/Marina-logo_v7lcbn.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#14241f;
+    --ink-soft:#46554f;
+    --petrol:#0e5a5e;
+    --petrol-deep:#0a3f42;
+    --petrol-700:#0c4d50;
+    --coral:#ff6a4d;
+    --coral-deep:#e8513a;
+    --sage:#2f9e8c;
+    --sage-soft:#dcefe8;
+    --mist:#eef4f2;
+    --mist-2:#e6efeb;
+    --line:#d9e6e1;
+    --paper:#ffffff;
+    --sand:#f4eee3;
+    --radius:18px;
+    --radius-sm:12px;
+    --shadow-sm:0 1px 2px rgba(10,40,40,.06), 0 6px 18px rgba(10,40,40,.05);
+    --shadow:0 18px 50px -20px rgba(10,40,40,.28);
+    --maxw:1180px;
+    --font-display:'Fraunces', Georgia, 'Times New Roman', serif;
+    --font-sans:'Plus Jakarta Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  }
+
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:var(--font-sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit}
+
+  .wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{scroll-margin-top:86px}
+  .section{padding:88px 0}
+  .section--tight{padding:64px 0}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    font-size:12.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--petrol);
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--coral)}
+  .eyebrow.on-dark{color:#8fe7d6}
+  .eyebrow.on-dark::before{background:var(--coral)}
+
+  h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.06;letter-spacing:-.01em;margin:0}
+  h2.h{font-size:clamp(28px,4vw,46px);margin:16px 0 0;max-width:18ch}
+  h2.h em, h1 em{font-style:italic;color:var(--coral)}
+  .lead{font-size:clamp(16px,1.6vw,19px);color:var(--ink-soft);max-width:60ch;margin:18px 0 0}
+
+  /* buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 26px;border-radius:999px;border:1px solid transparent;
+    font-weight:700;font-size:15.5px;cursor:pointer;transition:transform .15s ease, box-shadow .2s ease, background .2s ease;
+    will-change:transform;
+  }
+  .btn:active{transform:translateY(1px)}
+  .btn--primary{background:var(--coral);color:#fff;box-shadow:0 12px 26px -10px rgba(232,81,58,.7)}
+  .btn--primary:hover{background:var(--coral-deep)}
+  .btn--ink{background:var(--ink);color:#fff}
+  .btn--ink:hover{background:#0c1c18}
+  .btn--ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+  .btn--ghost:hover{border-color:var(--petrol);color:var(--petrol)}
+  .btn--ghost.on-dark{border-color:rgba(255,255,255,.28);color:#fff}
+  .btn--ghost.on-dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .btn--lg{padding:17px 32px;font-size:16.5px}
+  .btn--block{width:100%}
+
+  .lens{width:9px;height:9px;border-radius:50%;border:2.5px solid var(--coral);display:inline-block;flex:none}
+
+  /* ---------- announcement ---------- */
+  .anno{background:var(--ink);color:#eafdf7;font-size:13.5px;text-align:center;position:relative}
+  .anno .wrap{display:flex;align-items:center;justify-content:center;gap:12px;padding-top:11px;padding-bottom:11px}
+  .anno b{color:#fff}
+  .anno .dot{width:7px;height:7px;border-radius:50%;background:var(--coral);flex:none;animation:pulse 1.8s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+  /* ---------- header ---------- */
+  header.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand img{height:42px;width:auto}
+  .brand .bt{display:flex;flex-direction:column;line-height:1.1}
+  .brand .bt b{font-family:var(--font-display);font-size:18px;font-weight:600}
+  .brand .bt span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{font-size:14.5px;font-weight:600;color:var(--ink-soft)}
+  .nav-links a:hover{color:var(--petrol)}
+  .nav-cta{display:flex;align-items:center;gap:14px}
+  .nav-phone{font-weight:700;color:var(--petrol);font-size:14.5px;display:flex;align-items:center;gap:7px}
+  .burger{display:none;background:none;border:1px solid var(--line);border-radius:10px;width:44px;height:42px;cursor:pointer;align-items:center;justify-content:center}
+  .burger span{display:block;width:20px;height:2px;background:var(--ink);position:relative}
+  .burger span::before,.burger span::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--ink)}
+  .burger span::before{top:-6px}.burger span::after{top:6px}
+
+  /* ---------- hero ---------- */
+  .hero{background:
+      radial-gradient(120% 120% at 85% -10%, var(--mist) 0%, rgba(238,244,242,0) 55%),
+      linear-gradient(180deg,#fff 0%, #fbfdfc 100%);
+      position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-180px;top:-120px;width:480px;height:480px;border-radius:50%;border:1px solid var(--line);opacity:.6}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;padding:70px 0 78px}
+  .hero h1{font-size:clamp(34px,5.1vw,60px);margin-top:20px}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+  .badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:var(--ink-soft);box-shadow:var(--shadow-sm)}
+  .badge .lens{width:8px;height:8px;border-width:2px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .hero-note{margin-top:16px;font-size:13px;color:var(--ink-soft)}
+
+  .vsl{position:relative;border-radius:24px;overflow:hidden;background:var(--ink);box-shadow:var(--shadow);border:1px solid rgba(0,0,0,.04)}
+  .vsl video{width:100%;display:block;aspect-ratio:9/12;object-fit:cover;background:#0a1f1c}
+  .vsl .tag{position:absolute;top:14px;left:14px;z-index:2;background:rgba(20,36,31,.78);color:#eafdf7;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:7px 12px;border-radius:999px;backdrop-filter:blur(6px)}
+  .info-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:18px}
+  .info-strip div{background:#fff;padding:14px 12px;text-align:center}
+  .info-strip span{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .info-strip b{font-family:var(--font-display);font-size:16px;font-weight:600;margin-top:3px;display:block}
+
+  /* ---------- marquee ---------- */
+  .marquee{background:var(--petrol-deep);color:#cdeee6;overflow:hidden;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+  .marquee-track{display:flex;gap:38px;white-space:nowrap;padding:15px 0;width:max-content;animation:scroll 32s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .marquee-track span{font-size:14px;font-weight:600;letter-spacing:.04em;display:inline-flex;align-items:center;gap:38px}
+  .marquee-track span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--coral)}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ---------- conditions hub ---------- */
+  .sec-head{max-width:760px}
+  .cond-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+  .cond{
+    text-align:left;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;cursor:pointer;
+    transition:transform .18s ease, box-shadow .2s ease, border-color .2s ease;display:flex;flex-direction:column;gap:12px;min-height:172px;
+  }
+  .cond:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+  .cond:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+  .cond .ic{width:44px;height:44px;border-radius:12px;background:var(--mist);display:flex;align-items:center;justify-content:center}
+  .cond .ic svg{width:22px;height:22px;stroke:var(--petrol);fill:none;stroke-width:1.7}
+  .cond h3{font-size:18px}
+  .cond p{margin:0;font-size:13.5px;color:var(--ink-soft);flex:1}
+  .cond .go{font-size:13px;font-weight:700;color:var(--coral);display:flex;align-items:center;gap:6px}
+
+  /* ---------- self check ---------- */
+  .check{background:var(--ink);color:#eafaf5;border-radius:28px;padding:0;overflow:hidden}
+  .check-grid{display:grid;grid-template-columns:1.25fr .9fr}
+  .check-l{padding:50px 46px}
+  .check-l h2{color:#fff}
+  .check-l .lead{color:#bcd6cf}
+  .check-list{margin:26px 0 0;display:grid;gap:10px}
+  .ckitem{display:flex;align-items:flex-start;gap:13px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:13px 15px;cursor:pointer;transition:background .15s ease,border-color .15s ease}
+  .ckitem:hover{background:rgba(255,255,255,.08)}
+  .ckitem input{position:absolute;opacity:0;width:0;height:0}
+  .ckbox{width:22px;height:22px;border-radius:7px;border:2px solid rgba(255,255,255,.35);flex:none;display:flex;align-items:center;justify-content:center;transition:all .15s ease;margin-top:1px}
+  .ckbox svg{width:13px;height:13px;stroke:#fff;stroke-width:3;fill:none;opacity:0;transition:opacity .15s}
+  .ckitem input:checked + .ckbox{background:var(--sage);border-color:var(--sage)}
+  .ckitem input:checked + .ckbox svg{opacity:1}
+  .ckitem input:focus-visible + .ckbox{outline:3px solid var(--coral);outline-offset:2px}
+  .ckitem span{font-size:14.5px;font-weight:500}
+  .check-r{background:linear-gradient(180deg,var(--petrol-700),var(--petrol-deep));padding:46px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:18px}
+  .meter{position:relative;width:148px;height:148px}
+  .meter svg{transform:rotate(-90deg)}
+  .meter .bg{stroke:rgba(255,255,255,.16)}
+  .meter .fg{stroke:var(--coral);stroke-linecap:round;transition:stroke-dashoffset .5s cubic-bezier(.4,0,.2,1)}
+  .meter .num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .meter .num b{font-family:var(--font-display);font-size:40px;font-weight:600;color:#fff;line-height:1}
+  .meter .num small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#9fe0d2;margin-top:4px}
+  .check-msg{font-size:14.5px;color:#dff2ec;min-height:42px;max-width:30ch}
+  .check-r .btn{width:100%}
+
+  /* ---------- mistake ---------- */
+  .mistake{background:var(--sand)}
+  .miss-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:38px}
+  .miss{display:flex;align-items:flex-start;gap:14px;background:#fff;border:1px solid #ece2d2;border-radius:14px;padding:20px}
+  .miss .x{width:30px;height:30px;border-radius:8px;background:#fde8e3;color:var(--coral-deep);display:flex;align-items:center;justify-content:center;font-weight:800;flex:none;font-size:15px}
+  .miss p{margin:0;font-size:15px;color:var(--ink)}
+  .reality{margin-top:30px;background:var(--ink);color:#fff;border-radius:18px;padding:30px 34px;font-family:var(--font-display);font-size:clamp(19px,2.4vw,26px);line-height:1.3}
+  .reality em{font-style:italic;color:var(--coral)}
+
+  /* ---------- before/after ---------- */
+  .ba-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:42px}
+  .ba{border-radius:var(--radius);padding:30px;border:1px solid var(--line)}
+  .ba.before{background:#fff}
+  .ba.after{background:var(--petrol-deep);color:#eafaf5;border-color:transparent}
+  .ba .tag{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+  .ba.before .tag{color:var(--coral-deep)}
+  .ba.after .tag{color:#8fe7d6}
+  .ba h3{font-size:23px;margin:8px 0 18px}
+  .ba.after h3{color:#fff}
+  .ba ul{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+  .ba li{display:flex;align-items:flex-start;gap:12px;font-size:15px}
+  .ba.before li{color:var(--ink-soft)}
+  .ba .mk{width:22px;height:22px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;margin-top:1px}
+  .ba.before .mk{background:#fde8e3;color:var(--coral-deep)}
+  .ba.after .mk{background:rgba(143,231,214,.18);color:#8fe7d6}
+  .ba .mk svg{width:12px;height:12px;stroke-width:3;fill:none}
+
+  /* ---------- surgeon ---------- */
+  .surgeon{background:linear-gradient(160deg,var(--petrol) 0%, var(--petrol-deep) 100%);color:#eafaf5;position:relative;overflow:hidden}
+  .surgeon::before{content:"";position:absolute;left:-140px;bottom:-160px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(255,255,255,.08)}
+  .surg-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center;position:relative}
+  .surg-photo{position:relative}
+  .surg-photo img{border-radius:22px;width:100%;object-fit:cover;aspect-ratio:4/5;box-shadow:var(--shadow);border:3px solid rgba(255,255,255,.1)}
+  .surg-photo .cred{position:absolute;bottom:-16px;left:18px;right:18px;background:#fff;color:var(--ink);border-radius:14px;padding:14px 16px;box-shadow:var(--shadow);text-align:center}
+  .surg-photo .cred b{font-family:var(--font-display);font-size:15px;display:block}
+  .surg-photo .cred span{font-size:11.5px;color:var(--ink-soft);letter-spacing:.04em}
+  .surg-l h2{color:#fff;font-size:clamp(28px,3.6vw,42px);margin-top:14px}
+  .surg-role{color:#8fe7d6;font-weight:700;font-size:15px;margin-top:8px;letter-spacing:.02em}
+  .surg-l p{color:#cfe8e1;margin-top:18px;max-width:54ch}
+  .surg-mission{border-left:3px solid var(--coral);padding-left:18px;margin-top:22px;font-family:var(--font-display);font-style:italic;font-size:19px;color:#fff;line-height:1.4}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+  .stat{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 14px;text-align:center}
+  .stat b{font-family:var(--font-display);font-size:30px;font-weight:600;color:#fff;display:block;line-height:1}
+  .stat span{font-size:11.5px;color:#a9d8ce;letter-spacing:.04em;margin-top:6px;display:block}
+
+  /* ---------- benefits ---------- */
+  .ben-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+  .ben{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:transform .18s ease, box-shadow .2s}
+  .ben:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .ben .ic{width:48px;height:48px;border-radius:12px;background:var(--sage-soft);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+  .ben .ic svg{width:24px;height:24px;stroke:var(--petrol);fill:none;stroke-width:1.6}
+  .ben h3{font-size:19px;margin-bottom:7px}
+  .ben p{margin:0;font-size:14px;color:var(--ink-soft)}
+
+  /* ---------- steps ---------- */
+  .steps{background:var(--mist)}
+  .step-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:42px;counter-reset:s}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;position:relative}
+  .step .n{font-family:var(--font-display);font-size:15px;font-weight:700;color:#fff;background:var(--coral);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+  .step h3{font-size:20px;margin-bottom:8px}
+  .step p{margin:0;font-size:14.5px;color:var(--ink-soft)}
+  .step .arrow{position:absolute;right:-26px;top:50%;transform:translateY(-50%);z-index:2;color:var(--line)}
+  .step:last-child .arrow{display:none}
+
+  /* ---------- video stories ---------- */
+  .vid-row{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:42px 0 8px;margin:0 -24px;padding-left:24px;padding-right:24px;-webkit-overflow-scrolling:touch}
+  .vid-row::-webkit-scrollbar{height:8px}
+  .vid-row::-webkit-scrollbar-thumb{background:var(--line);border-radius:99px}
+  .vcard{flex:0 0 280px;scroll-snap-align:start;border-radius:20px;overflow:hidden;background:var(--ink);box-shadow:var(--shadow-sm);border:1px solid var(--line)}
+  .vcard video{width:100%;aspect-ratio:9/13;object-fit:cover;background:#0a1f1c;display:block}
+  .vid-ctrl{display:flex;gap:10px;margin-top:18px}
+  .vbtn{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s}
+  .vbtn:hover{border-color:var(--petrol);color:var(--petrol)}
+
+  /* ---------- testimonials ---------- */
+  .testi{background:var(--petrol-deep);color:#eafaf5}
+  .testi .eyebrow{color:#8fe7d6}
+  .testi h2.h{color:#fff}
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:42px}
+  .tcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:24px}
+  .stars{color:#ffce4d;letter-spacing:3px;font-size:15px}
+  .tcard p{font-size:14.5px;color:#dff2ec;margin:14px 0 18px}
+  .tperson{display:flex;align-items:center;gap:12px}
+  .av{width:42px;height:42px;border-radius:50%;background:var(--coral);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex:none}
+  .tperson b{display:block;font-size:14.5px;color:#fff}
+  .tperson span{font-size:12.5px;color:#9fc6bd}
+
+  /* ---------- services ---------- */
+  .serv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:42px}
+  .serv{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .serv .ic{width:44px;height:44px;border-radius:12px;background:var(--mist);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+  .serv .ic svg{width:22px;height:22px;stroke:var(--petrol);fill:none;stroke-width:1.6}
+  .serv h3{font-size:17px;margin-bottom:6px}
+  .serv p{margin:0;font-size:13.5px;color:var(--ink-soft)}
+
+  /* ---------- locations ---------- */
+  .loc{background:var(--mist)}
+  .loc-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:42px}
+  .loc-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+  .loc-card .pill{display:inline-flex;align-items:center;gap:8px;background:var(--sage-soft);color:var(--petrol);font-weight:700;font-size:12.5px;padding:6px 12px;border-radius:999px;letter-spacing:.04em}
+  .loc-card h3{font-size:21px;margin:14px 0 4px}
+  .loc-card .addr{font-size:14.5px;color:var(--ink-soft);margin-bottom:14px}
+  .loc-hours{display:flex;align-items:center;gap:10px;font-size:14.5px;font-weight:600;color:var(--ink);padding-top:14px;border-top:1px dashed var(--line)}
+  .loc-hours .lens{width:8px;height:8px}
+  .loc-contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+
+  /* ---------- booking ---------- */
+  .book{background:var(--ink);color:#eafaf5;position:relative;overflow:hidden}
+  .book::after{content:"";position:absolute;right:-150px;top:-120px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(255,255,255,.07)}
+  .book-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;position:relative}
+  .book-l h2{color:#fff;font-size:clamp(28px,3.6vw,42px);margin-top:14px}
+  .book-l .lead{color:#bcd6cf}
+  .incl{margin-top:30px;display:grid;gap:11px}
+  .incl li{display:flex;align-items:flex-start;gap:12px;font-size:15px;color:#dff2ec;list-style:none}
+  .incl .mk{width:22px;height:22px;border-radius:50%;background:rgba(143,231,214,.18);color:#8fe7d6;display:flex;align-items:center;justify-content:center;flex:none;margin-top:1px}
+  .incl .mk svg{width:12px;height:12px;stroke-width:3;fill:none}
+  .who{margin-top:28px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px 22px}
+  .who h4{font-family:var(--font-sans);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#8fe7d6;margin:0 0 12px}
+  .who ul{margin:0;padding:0;display:grid;gap:8px}
+  .who li{list-style:none;font-size:14px;color:#cfe8e1;display:flex;gap:9px;align-items:flex-start}
+  .who li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--coral);margin-top:8px;flex:none}
+
+  .form-card{background:#fff;color:var(--ink);border-radius:24px;padding:34px;box-shadow:var(--shadow)}
+  .form-card h3{font-size:23px;margin-bottom:4px}
+  .form-card .sub{font-size:13.5px;color:var(--ink-soft);margin-bottom:22px}
+  .field{margin-bottom:15px}
+  .field label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;color:var(--ink)}
+  .field input,.field select,.field textarea{
+    width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:11px;font-size:15px;font-family:inherit;color:var(--ink);background:#fff;transition:border-color .15s, box-shadow .15s;
+  }
+  .field textarea{resize:vertical;min-height:78px}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--petrol);box-shadow:0 0 0 4px rgba(14,90,94,.12)}
+  .field .err{color:var(--coral-deep);font-size:12.5px;margin-top:6px;display:none;font-weight:600}
+  .field.invalid input,.field.invalid select{border-color:var(--coral)}
+  .field.invalid .err{display:block}
+  .form-foot{font-size:12px;color:var(--ink-soft);margin-top:14px;text-align:center}
+  .form-or{display:flex;align-items:center;gap:12px;margin:18px 0;color:var(--ink-soft);font-size:12.5px;font-weight:600}
+  .form-or::before,.form-or::after{content:"";flex:1;height:1px;background:var(--line)}
+  .alt-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .alt{display:flex;align-items:center;justify-content:center;gap:9px;padding:13px;border-radius:11px;border:1.5px solid var(--line);font-weight:700;font-size:14px;color:var(--ink);transition:all .15s}
+  .alt:hover{border-color:var(--petrol);color:var(--petrol)}
+  .alt.wa{border-color:#cdeee0;background:#f0fbf6;color:#1a8f5f}
+  .alt.wa:hover{border-color:#25D366;color:#128c3e}
+  .form-success{display:none;text-align:center;padding:30px 10px}
+  .form-success .ok{width:64px;height:64px;border-radius:50%;background:var(--sage-soft);color:var(--petrol);display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+  .form-success .ok svg{width:30px;height:30px;stroke-width:3;fill:none}
+  .form-success h3{margin-bottom:8px}
+  .form-success p{font-size:14px;color:var(--ink-soft);margin-bottom:20px}
+
+  /* ---------- faq ---------- */
+  .faq-list{max-width:820px;margin:42px auto 0}
+  .q{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;background:#fff}
+  .q.open{border-color:var(--petrol);box-shadow:var(--shadow-sm)}
+  .q button{width:100%;text-align:left;background:none;border:none;padding:20px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;cursor:pointer;font-size:16.5px;font-weight:600;font-family:var(--font-display);color:var(--ink)}
+  .q .icn{width:30px;height:30px;flex:none;border-radius:50%;background:var(--mist);display:flex;align-items:center;justify-content:center;transition:transform .25s, background .2s}
+  .q .icn svg{width:14px;height:14px;stroke:var(--petrol);stroke-width:2.4;fill:none}
+  .q.open .icn{transform:rotate(45deg);background:var(--petrol)}
+  .q.open .icn svg{stroke:#fff}
+  .q .panel{max-height:0;overflow:hidden;transition:max-height .3s ease}
+  .q .panel p{margin:0;padding:0 22px 22px;font-size:14.5px;color:var(--ink-soft)}
+
+  /* ---------- final cta ---------- */
+  .final{background:linear-gradient(160deg,var(--coral) 0%, var(--coral-deep) 100%);color:#fff;text-align:center}
+  .final h2{font-size:clamp(28px,4vw,46px);max-width:20ch;margin:16px auto 0}
+  .final p{max-width:50ch;margin:18px auto 0;color:#ffe6df;font-size:17px}
+  .final .btn--ink{margin-top:30px}
+  .final .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+  .final .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600}
+
+  /* ---------- footer ---------- */
+  footer{background:var(--ink);color:#a9c4bc;padding:64px 0 110px}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+  .foot-brand img{height:48px;margin-bottom:16px}
+  .foot-brand p{font-size:13.5px;max-width:30ch;color:#88a8a0}
+  .foot-soc{display:flex;gap:10px;margin-top:18px}
+  .foot-soc a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;transition:all .15s}
+  .foot-soc a:hover{border-color:var(--coral);background:rgba(255,106,77,.14)}
+  .foot-soc svg{width:18px;height:18px;fill:#cfe8e1}
+  footer h5{color:#fff;font-family:var(--font-sans);font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 16px}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  footer ul a{font-size:14px;color:#a9c4bc}
+  footer ul a:hover{color:#fff}
+  .foot-contact li{font-size:14px;color:#a9c4bc;display:flex;gap:10px;align-items:flex-start;margin-bottom:12px}
+  .foot-contact svg{width:17px;height:17px;stroke:#8fe7d6;fill:none;stroke-width:1.7;flex:none;margin-top:3px}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:48px;padding-top:26px;font-size:12px;color:#7da097;line-height:1.7}
+  .foot-bottom .disc{max-width:none;margin-bottom:14px}
+  .foot-bottom .row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+  /* ---------- sticky bar ---------- */
+  .sticky-bar{position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--ink);color:#fff;border-top:2px solid var(--coral);transform:translateY(110%);transition:transform .35s ease}
+  .sticky-bar.show{transform:translateY(0)}
+  .sticky-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0}
+  .sticky-l{display:flex;align-items:center;gap:14px;min-width:0}
+  .sticky-l .dot{width:8px;height:8px;border-radius:50%;background:var(--coral);flex:none;animation:pulse 1.6s infinite}
+  .sticky-l b{font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sticky-l .cd{font-variant-numeric:tabular-nums;font-weight:800;color:#ffce4d;background:rgba(255,206,77,.12);padding:3px 10px;border-radius:8px;font-size:14px;flex:none}
+  .sticky-r{display:flex;gap:10px;flex:none}
+
+  /* ---------- mobile ---------- */
+  @media (max-width:980px){
+    .hero-grid{grid-template-columns:1fr;gap:38px;padding:48px 0 56px}
+    .vsl{max-width:380px;margin:0 auto}
+    .check-grid{grid-template-columns:1fr}
+    .surg-grid{grid-template-columns:1fr;gap:60px}
+    .surg-photo{max-width:340px;margin:0 auto}
+    .book-grid{grid-template-columns:1fr;gap:36px}
+    .cond-grid,.serv-grid{grid-template-columns:repeat(2,1fr)}
+    .ben-grid,.step-grid,.testi-grid{grid-template-columns:repeat(2,1fr)}
+    .step .arrow{display:none}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:760px){
+    .nav-links{display:none}
+    .nav-phone{display:none}
+    .burger{display:flex}
+    .nav-links.open{display:flex;position:absolute;top:70px;left:0;right:0;flex-direction:column;background:#fff;border-bottom:1px solid var(--line);padding:18px 24px;gap:18px;align-items:flex-start;box-shadow:var(--shadow)}
+    .section{padding:60px 0}
+    .miss-grid,.ba-grid,.loc-grid{grid-template-columns:1fr}
+    .ben-grid,.step-grid,.testi-grid,.cond-grid,.serv-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+    .info-strip{grid-template-columns:repeat(2,1fr)}
+    .foot-grid{grid-template-columns:1fr}
+    .check-l,.check-r{padding:34px 26px}
+    .form-card{padding:26px 22px}
+    .sticky-l b span.hide-sm{display:none}
+    .reality{padding:24px}
+    .alt-row{grid-template-columns:1fr}
+    .anno .wrap{font-size:12px;padding-left:16px;padding-right:16px}
+  }
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease, transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1;transform:none}
+  }
+  :focus-visible{outline:3px solid var(--sage);outline-offset:2px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<!-- announcement -->
+<div class="anno">
+  <div class="wrap">
+    <span class="dot"></span>
+    <span>Most abdominal problems don't settle on their own — <b>the earlier they're assessed, the simpler your options.</b> Limited consultation slots this week.</span>
+  </div>
+</div>
+
+<!-- header -->
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Marina's Clinic home">
+      <img src="https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/Marina-logo_v7lcbn.png" alt="Marina's Clinic logo" />
+      <span class="bt"><b>Marina's Clinic</b><span>Gastro &amp; General Surgery</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#conditions">Conditions</a>
+      <a href="#selfcheck">Self-check</a>
+      <a href="#surgeon">Your surgeon</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#locations">Visit</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+919884000171">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        98840 00171
+      </a>
+      <a class="btn btn--primary" href="#book">Book consultation</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<span id="top"></span>
+
+<!-- hero -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Laparoscopic · Bariatric · Gastro Surgery — Nungambakkam, Chennai</span>
+      <h1>Stop guessing what's wrong. Get the clarity to <em>finally</em> decide.</h1>
+      <p class="lead">Hernia, gallstones, acid reflux, piles, obesity — most people wait months hoping it settles. A focused consultation with Dr. Preethi Mrinalini tells you exactly what you're dealing with, and what your real options are.</p>
+      <div class="hero-cta">
+        <a class="btn btn--primary btn--lg" href="#book">Book my consultation</a>
+        <a class="btn btn--ghost btn--lg" href="#selfcheck">Check my symptoms</a>
+      </div>
+      <div class="badges">
+        <span class="badge"><span class="lens"></span>Laparoscopic &amp; minimally invasive</span>
+        <span class="badge"><span class="lens"></span>Reports reviewed personally</span>
+        <span class="badge"><span class="lens"></span>Second opinions welcome</span>
+      </div>
+      <p class="hero-note">In-clinic consultation · Paid session · Our team confirms your fee &amp; slot when you book.</p>
+    </div>
+    <div>
+      <div class="vsl">
+        <span class="tag">▶ Watch before you decide</span>
+        <video controls playsinline preload="metadata" poster="">
+          <source src="https://res.cloudinary.com/dthj7fakc/video/upload/v1781762972/video2_qtujea.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="info-strip">
+        <div><span>Mode</span><b>In-clinic</b></div>
+        <div><span>Surgeon</span><b>Dr. Preethi</b></div>
+        <div><span>Approach</span><b>Keyhole</b></div>
+        <div><span>Slots</span><b>Limited</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Hernia &amp; Diastasis Recti</span><span>Bariatric / Weight-loss Surgery</span><span>Gallbladder Stones</span><span>Acid Reflux &amp; GERD</span><span>Appendicitis</span><span>Piles · Fissure · Fistula</span><span>Diabetic Foot</span><span>Colorectal Surgery</span>
+    <span>Hernia &amp; Diastasis Recti</span><span>Bariatric / Weight-loss Surgery</span><span>Gallbladder Stones</span><span>Acid Reflux &amp; GERD</span><span>Appendicitis</span><span>Piles · Fissure · Fistula</span><span>Diabetic Foot</span><span>Colorectal Surgery</span>
+  </div>
+</div>
+
+<!-- conditions hub -->
+<section class="section" id="conditions">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What brings you here</span>
+      <h2 class="h">One clinic for the problems people <em>put off</em> the longest.</h2>
+      <p class="lead">Pick what's been bothering you. Each one starts with the same thing — a clear, honest assessment, not a rushed glance.</p>
+    </div>
+    <div class="cond-grid">
+      <button class="cond reveal" data-cond="Hernia / Diastasis Recti">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12h16M12 4v16" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span>
+        <h3>Hernia &amp; Diastasis Recti</h3>
+        <p>A bulge, heaviness, or post-pregnancy tummy that never went away.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Bariatric / Weight-loss Surgery">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/><path d="M9 12h6M12 9v6" stroke-linecap="round"/></svg></span>
+        <h3>Bariatric / Weight Loss</h3>
+        <p>Weight that won't move despite diet, with diabetes or BP alongside.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Gallbladder Stones">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3c4 0 7 3 7 8 0 4-3 10-7 10s-7-6-7-10c0-5 3-8 7-8z"/></svg></span>
+        <h3>Gallbladder Stones</h3>
+        <p>Pain after meals, on the upper-right side, sometimes with nausea.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Acid Reflux / GERD">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2s5 6 5 11a5 5 0 0 1-10 0c0-5 5-11 5-11z"/></svg></span>
+        <h3>Acid Reflux &amp; GERD</h3>
+        <p>Burning chest, sour reflux after eating, worse when you lie down.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Appendicitis">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M6 4v6a6 6 0 0 0 12 0V4"/><path d="M9 16l-2 4M15 16l2 4" stroke-linecap="round"/></svg></span>
+        <h3>Appendicitis</h3>
+        <p>Sharp, worsening lower-right pain that needs prompt evaluation.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Piles / Fissure / Fistula">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg></span>
+        <h3>Piles, Fissure &amp; Fistula</h3>
+        <p>Pain or bleeding during bowel movements you've been brushing off.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Diabetic Foot">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 10c0-3 2-5 5-5s5 2 5 5c0 2-1 3-1 5l4 2v2H6v-2c0-4-1-5-1-7z"/></svg></span>
+        <h3>Diabetic Foot</h3>
+        <p>Non-healing wounds or numbness that need timely specialist care.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+      <button class="cond reveal" data-cond="Colorectal / Crohn's / Ulcerative Colitis">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M5 7c4 0 4 5 8 5s4-5 6-5M5 13c4 0 4 5 8 5s4-5 6-5" stroke-linecap="round"/></svg></span>
+        <h3>Colorectal &amp; More</h3>
+        <p>Crohn's, ulcerative colitis and other complex GI conditions.</p>
+        <span class="go">Assess this <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- self check -->
+<section class="section section--tight" id="selfcheck">
+  <div class="wrap">
+    <div class="check reveal">
+      <div class="check-grid">
+        <div class="check-l">
+          <span class="eyebrow on-dark">A 30-second self-check</span>
+          <h2 class="h">Tick what sounds like you. Most people are surprised by the count.</h2>
+          <p class="lead">These are the symptoms patients tell us they ignored for months — sometimes years. This won't diagnose anything, but it'll tell you whether an assessment is worth your time.</p>
+          <div class="check-list">
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>A visible bulge or swelling in your abdomen or groin</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Ongoing stomach pain, heaviness or bloating</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Burning chest or acid reflux after meals</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Pain or bleeding during bowel movements</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>A post-pregnancy tummy bulge that never went away</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Weight you can't lose despite diet and exercise</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Discomfort when lifting, coughing or bending</span></label>
+            <label class="ckitem"><input type="checkbox" class="sym"><span class="ckbox"><svg viewBox="0 0 24 24"><path d="M5 12l5 5L20 6"/></svg></span><span>Tried medicines, but the problem keeps returning</span></label>
+          </div>
+        </div>
+        <div class="check-r">
+          <div class="meter">
+            <svg width="148" height="148" viewBox="0 0 148 148">
+              <circle class="bg" cx="74" cy="74" r="64" fill="none" stroke-width="12"></circle>
+              <circle class="fg" id="meterFg" cx="74" cy="74" r="64" fill="none" stroke-width="12" stroke-dasharray="402" stroke-dashoffset="402"></circle>
+            </svg>
+            <div class="num"><b id="meterNum">0</b><small>of 8 signs</small></div>
+          </div>
+          <p class="check-msg" id="checkMsg">Tick what applies above to see whether an assessment is worth your time.</p>
+          <a class="btn btn--primary" href="#book">Book my consultation</a>
+          <span style="font-size:12px;color:#9fe0d2">Self-check only — not a diagnosis.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- mistake -->
+<section class="section mistake">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The biggest mistake</span>
+      <h2 class="h">Most patients make the same costly mistake: <em>they wait.</em></h2>
+    </div>
+    <div class="miss-grid">
+      <div class="miss reveal"><span class="x">✕</span><p>They hope the swelling or pain disappears on its own.</p></div>
+      <div class="miss reveal"><span class="x">✕</span><p>They avoid it out of fear of surgery.</p></div>
+      <div class="miss reveal"><span class="x">✕</span><p>They search Google and YouTube for answers instead of clarity.</p></div>
+      <div class="miss reveal"><span class="x">✕</span><p>They live with the discomfort, every single day.</p></div>
+    </div>
+    <div class="reality reveal">The reality is simple: <em>most abdominal problems don't heal on their own.</em> Delaying usually makes them harder to treat — not easier. The earlier it's assessed, the simpler the options tend to be.</div>
+  </div>
+</section>
+
+<!-- before after -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Before &amp; after a clear diagnosis</span>
+      <h2 class="h">The hardest part isn't the condition. It's the <em>not-knowing.</em></h2>
+    </div>
+    <div class="ba-grid">
+      <div class="ba before reveal">
+        <span class="tag">Living with it</span>
+        <h3>Every day on hold</h3>
+        <ul>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Planning your day around the discomfort</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Quietly worrying whether it's getting worse</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Avoiding lifting, exercise, certain foods or clothes</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Conflicting answers from Google and forums</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg></span>Postponing the decision month after month</li>
+        </ul>
+      </div>
+      <div class="ba after reveal">
+        <span class="tag">After your assessment</span>
+        <h3>Finally, clarity</h3>
+        <ul>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>You know exactly what's actually going on</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>You understand your real options — not guesses</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>You know what recovery would actually look like</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Your scans and reports reviewed by a specialist</li>
+          <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>A decision you can make with confidence</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- surgeon -->
+<section class="section surgeon" id="surgeon">
+  <div class="wrap surg-grid">
+    <div class="surg-photo reveal">
+      <img src="https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/dr-preethi-mrinalini_wmgdmk.webp" alt="Dr. Preethi Mrinalini K" />
+      <div class="cred">
+        <b>Dr. Preethi Mrinalini K</b>
+        <span>MBBS · MS (Gen Surg) · FMBS · FIAGES</span>
+      </div>
+    </div>
+    <div class="surg-l reveal">
+      <span class="eyebrow on-dark">Meet your surgeon</span>
+      <h2>Dr. Preethi Mrinalini</h2>
+      <div class="surg-role">Advanced Laparoscopic, Bariatric &amp; General Surgeon</div>
+      <p>Trained in General Surgery at Sri Ramachandra Medical College, Chennai, with a fellowship in Minimal Access Surgery and Metabolic &amp; Bariatric Surgery (FMBS). She helps patients with hernia, obesity and abdominal-wall conditions understand their diagnosis and explore modern, minimally invasive options — built around safety, recovery and long-term outcomes.</p>
+      <p style="margin-top:10px">Consultant Surgeon at <b style="color:#fff">Marina's Clinic, Nungambakkam</b> and <b style="color:#fff">Apollo Main Hospitals, Greams Road</b>.</p>
+      <div class="surg-mission">"Help patients make an informed decision — before their condition affects their quality of life."</div>
+      <div class="stats">
+        <div class="stat"><b>12+</b><span>Years experience</span></div>
+        <div class="stat"><b>300+</b><span>Procedures</span></div>
+        <div class="stat"><b>2</b><span>Trusted locations</span></div>
+        <div class="stat"><b>15+</b><span>Conditions treated</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- benefits -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why patients choose Marina's</span>
+      <h2 class="h">Today's options aren't what most people picture.</h2>
+      <p class="lead">Where surgery is genuinely the right step, modern laparoscopic approaches make it far gentler than the open operations people still imagine.</p>
+    </div>
+    <div class="ben-grid">
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5" stroke-linecap="round"/></svg></span><h3>Minimally invasive</h3><p>Keyhole technique with small incisions, less scarring and less to heal from.</p></div>
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 7v5l3 3" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/></svg></span><h3>Faster recovery</h3><p>Many patients are back to a normal routine within a couple of weeks.</p></div>
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5" stroke-linecap="round"/></svg></span><h3>Reports reviewed personally</h3><p>Bring your scans and prescriptions — they're looked at properly, by the surgeon.</p></div>
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span><h3>Honest second opinions</h3><p>A fresh, specialist perspective on advice you've already been given — no pressure.</p></div>
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 12h4l2 5 4-12 2 7h6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Day-care &amp; short stay</h3><p>Many laparoscopic procedures need just a single night, some as day-care.</p></div>
+      <div class="ben reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span><h3>Insurance support</h3><p>A dedicated team helps you through cashless and reimbursement paperwork.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- steps -->
+<section class="section steps">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 class="h">Three simple steps to real answers.</h2>
+    </div>
+    <div class="step-grid">
+      <div class="step reveal">
+        <span class="n">1</span>
+        <h3>Book your slot</h3>
+        <p>Share your name, number and what's bothering you. The team confirms a time and your fee.</p>
+        <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="step reveal">
+        <span class="n">2</span>
+        <h3>Get assessed</h3>
+        <p>A focused, in-clinic session — your symptoms and scans reviewed by Dr. Preethi herself.</p>
+        <span class="arrow"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="step reveal">
+        <span class="n">3</span>
+        <h3>Get your plan</h3>
+        <p>Clear options in plain language, expected recovery, and next steps. You decide — no pressure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- video stories -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">In Dr. Preethi's words</span>
+      <h2 class="h">Short clips that clear up the most common myths.</h2>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="vid-row" id="vidRow">
+      <div class="vcard"><video controls playsinline preload="metadata"><source src="https://res.cloudinary.com/dthj7fakc/video/upload/v1781762970/video1_kaazse.mp4" type="video/mp4"></video></div>
+      <div class="vcard"><video controls playsinline preload="metadata"><source src="https://res.cloudinary.com/dthj7fakc/video/upload/v1781762972/video2_qtujea.mp4" type="video/mp4"></video></div>
+      <div class="vcard"><video controls playsinline preload="metadata"><source src="https://res.cloudinary.com/dthj7fakc/video/upload/v1781762972/video3_rpzmq3.mp4" type="video/mp4"></video></div>
+    </div>
+    <div class="vid-ctrl">
+      <button class="vbtn" id="vPrev" aria-label="Previous"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="vbtn" id="vNext" aria-label="Next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 6l6 6-6 6"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- testimonials -->
+<section class="section testi" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Patient words</span>
+      <h2 class="h">People who finally stopped waiting.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Persistent abdominal pain turned out to be gallstones. After my surgery I woke up already feeling relief. The kindness of the doctor and staff made all the difference."</p>
+        <div class="tperson"><span class="av">K</span><div><b>Kishore</b><span>Pallavaram</span></div></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"A severe gastric problem I'd struggled with for two years was resolved in just three months with proper care. The clinic is genuinely excellent."</p>
+        <div class="tperson"><span class="av">S</span><div><b>Senthil</b><span>T. Nagar</span></div></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"My father had acute appendicitis and needed immediate surgery. Everything was explained in detail and the operation was a success. Forever grateful to Dr. Preethi."</p>
+        <div class="tperson"><span class="av">S</span><div><b>Sumathi</b><span>Kodambakkam</span></div></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Endoscopy was easy, painless and convenient. The doctors explained everything and answered all my questions — I never felt hurried in any way."</p>
+        <div class="tperson"><span class="av">J</span><div><b>Janaki</b><span>Kodambakkam</span></div></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"My thyroid issue was affecting my physical and mental health. A successful surgery here changed my quality of life. Big thanks to Dr. Preethi Mrinalini."</p>
+        <div class="tperson"><span class="av">R</span><div><b>Rajesh</b><span>T. Nagar</span></div></div>
+      </div>
+      <div class="tcard reveal">
+        <div class="stars">★★★★★</div>
+        <p>"Warm, welcoming and spotlessly clean. The consultation was thorough and reassuring, which made me worry far less about the procedure."</p>
+        <div class="tperson"><span class="av">V</span><div><b>Vincent</b><span>Pallavaram</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- services -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Under one roof</span>
+      <h2 class="h">Everything for your visit, in one place.</h2>
+    </div>
+    <div class="serv-grid">
+      <div class="serv reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 3v4M16 3v4M4 9h16M5 5h14a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/></svg></span><h3>OP Consultation</h3><p>Focused, unhurried sessions with the surgeon.</p></div>
+      <div class="serv reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6v5l4 8a3 3 0 0 1-3 4H8a3 3 0 0 1-3-4l4-8V3z"/></svg></span><h3>Blood Tests</h3><p>On-site sample collection and diagnostics.</p></div>
+      <div class="serv reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><path d="M12 8v4M10 10h4" stroke-linecap="round"/></svg></span><h3>Master Health Check-ups</h3><p>Comprehensive packages to stay ahead of problems.</p></div>
+      <div class="serv reveal"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 7h16v12H4z"/><path d="M9 7V4h6v3M12 11v4M10 13h4" stroke-linecap="round"/></svg></span><h3>Minor Theatre &amp; Pharmacy</h3><p>An attached minor OT and in-house pharmacy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- locations -->
+<section class="section loc" id="locations">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Where to find us</span>
+      <h2 class="h">Two locations. Same surgeon, same standard of care.</h2>
+    </div>
+    <div class="loc-grid">
+      <div class="loc-card reveal">
+        <span class="pill"><span class="lens"></span>Evenings</span>
+        <h3>Marina's Clinic</h3>
+        <div class="addr">40 &amp; 54, Josier St, Nungambakkam, Chennai, Tamil Nadu 600034</div>
+        <div class="loc-hours"><span class="lens"></span>Mon – Sat · 5:00 PM – 8:00 PM</div>
+      </div>
+      <div class="loc-card reveal">
+        <span class="pill"><span class="lens"></span>Mornings</span>
+        <h3>Apollo Main Hospitals</h3>
+        <div class="addr">Greams Road, Thousand Lights, Chennai, Tamil Nadu</div>
+        <div class="loc-hours"><span class="lens"></span>Mon – Sat · 10:00 AM – 2:00 PM</div>
+      </div>
+    </div>
+    <div class="loc-contact">
+      <a class="btn btn--ink" href="https://www.google.com/maps/search/?api=1&query=Marina%27s+Clinic+Josier+Street+Nungambakkam+Chennai" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Get directions
+      </a>
+      <a class="btn btn--ghost" href="tel:+919884000171">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +91 98840 00171
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- booking -->
+<section class="section book" id="book">
+  <div class="wrap book-grid">
+    <div class="book-l reveal">
+      <span class="eyebrow on-dark">Book your consultation</span>
+      <h2>For people serious about understanding their condition.</h2>
+      <p class="lead">This isn't a rushed glance. It's a focused, honest session designed to give you real answers — and a clear next step.</p>
+      <ul class="incl">
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>A detailed assessment of what's actually going on</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Your specific symptoms mapped to what they may mean</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Review of your existing reports and scans</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Clear, plain-language explanation of your options</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Honest recovery expectations and timeline</li>
+        <li><span class="mk"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></span>Surgical guidance — only if it's genuinely right for you</li>
+      </ul>
+      <div class="who">
+        <h4>This is for you if…</h4>
+        <ul>
+          <li>You have symptoms you've been brushing off for too long</li>
+          <li>You've been advised surgery and want to truly understand it</li>
+          <li>You want a fresh, specialist second opinion</li>
+          <li>You want clarity before making any treatment decision</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="form-card">
+        <div id="formMain">
+          <h3>Request your slot</h3>
+          <p class="sub">Share a few details — the team calls you back to confirm your time and fee.</p>
+          <form id="leadForm" novalidate>
+            <div class="field" id="f-name">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+              <div class="err">Please enter your name.</div>
+            </div>
+            <div class="field" id="f-phone">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" autocomplete="tel" inputmode="numeric" maxlength="10" />
+              <div class="err">Please enter a valid 10-digit number.</div>
+            </div>
+            <div class="field" id="f-cond">
+              <label for="condition">What's bothering you?</label>
+              <select id="condition" name="condition">
+                <option value="" disabled selected>Select a condition</option>
+                <option>Hernia / Diastasis Recti</option>
+                <option>Bariatric / Weight-loss Surgery</option>
+                <option>Gallbladder Stones</option>
+                <option>Acid Reflux / GERD</option>
+                <option>Appendicitis</option>
+                <option>Piles / Fissure / Fistula</option>
+                <option>Diabetic Foot</option>
+                <option>Colorectal / Crohn's / Ulcerative Colitis</option>
+                <option>Not sure — need guidance</option>
+              </select>
+              <div class="err">Please choose what's bothering you.</div>
+            </div>
+            <div class="field">
+              <label for="slot">Preferred time</label>
+              <select id="slot" name="slot">
+                <option value="" disabled selected>Choose a preference</option>
+                <option>Morning — Apollo, Greams Road (10 AM – 2 PM)</option>
+                <option>Evening — Marina's Clinic, Nungambakkam (5 PM – 8 PM)</option>
+                <option>Either works</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="msg">Anything you'd like to add (optional)</label>
+              <textarea id="msg" name="msg" placeholder="Symptoms, how long, any reports you have…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block btn--lg">Request my consultation</button>
+            <p class="form-foot">🔒 Your details are kept private and used only to contact you about your appointment.</p>
+          </form>
+          <div class="form-or">or reach us directly</div>
+          <div class="alt-row">
+            <a class="alt wa" href="https://wa.me/919884000171?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation%20at%20Marina%27s%20Clinic." target="_blank" rel="noopener">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.5 15.3L2 22l4.8-1.5A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.5-2.6-1.1-4.3-3.8-4.4-4-.1-.2-1-1.4-1-2.6s.6-1.8.8-2.1c.2-.2.5-.3.6-.3h.5c.2 0 .4 0 .5.4.2.5.7 1.7.7 1.8.1.1.1.3 0 .4l-.3.5-.3.3c-.1.1-.3.3-.1.5.1.2.6 1 1.4 1.7 1 .9 1.8 1.1 2 1.2.2.1.4.1.5-.1l.6-.7c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3.1.1.1.5-.1 1z"/></svg>
+              WhatsApp us
+            </a>
+            <a class="alt" href="tel:+919884000171">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Call now
+            </a>
+          </div>
+        </div>
+
+        <div class="form-success" id="formSuccess">
+          <div class="ok"><svg viewBox="0 0 24 24" stroke="currentColor"><path d="M5 12l5 5L20 6"/></svg></div>
+          <h3>Request received</h3>
+          <p>Thank you — our team will call you shortly to confirm your slot. Prefer to talk now? Message us on WhatsApp.</p>
+          <a class="btn btn--primary" id="waConfirm" href="https://wa.me/919884000171" target="_blank" rel="noopener">Continue on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- faq -->
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head reveal" style="text-align:center;margin:0 auto;max-width:640px">
+      <span class="eyebrow">Before you book</span>
+      <h2 class="h" style="margin-left:auto;margin-right:auto">Common questions, answered.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="q"><button aria-expanded="false">Does my problem actually need surgery?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>Not always. The consultation is about understanding your condition first. Dr. Preethi explains what's going on and your options in plain language — surgery is only discussed if it's genuinely the right step for you.</p></div></div>
+      <div class="q"><button aria-expanded="false">I'm scared of surgery. Is this just a sales pitch for it?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>No. Many patients book purely for clarity or a second opinion and leave without any procedure. You get an honest assessment and your real options — the decision is always yours, with no pressure.</p></div></div>
+      <div class="q"><button aria-expanded="false">What is laparoscopic (keyhole) surgery?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>It's surgery performed through a few small incisions using a camera-guided instrument, instead of one large cut. That usually means smaller scars, less pain and a noticeably quicker recovery than traditional open surgery.</p></div></div>
+      <div class="q"><button aria-expanded="false">Can I come just for a second opinion?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>Absolutely — second opinions are welcome. Bring whatever reports or advice you've already received and they'll be reviewed objectively so you can decide with confidence.</p></div></div>
+      <div class="q"><button aria-expanded="false">Are surgeries covered by insurance?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>Most elective and emergency surgeries are covered by health insurance. A dedicated team helps you through cashless approvals and reimbursement paperwork so it's far less stressful.</p></div></div>
+      <div class="q"><button aria-expanded="false">How long is the hospital stay and recovery?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>For most laparoscopic procedures a single night is typical, and some are done as day-care. Recovery usually ranges from a few days to a couple of weeks depending on the procedure and your health.</p></div></div>
+      <div class="q"><button aria-expanded="false">What should I bring to the consultation?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>Any existing scans, reports or prescriptions related to your symptoms — they'll be reviewed personally as part of your assessment. If you don't have any, that's completely fine too.</p></div></div>
+      <div class="q"><button aria-expanded="false">What is the consultation fee?<span class="icn"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></button><div class="panel"><p>It's a paid, in-clinic session and the fee depends on your condition. Our team confirms the exact fee and your slot when you book — just submit the form or message us on WhatsApp.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- final cta -->
+<section class="section final">
+  <div class="wrap reveal">
+    <span class="eyebrow" style="color:#fff;justify-content:center">Take the first step</span>
+    <h2>Ignoring the symptoms won't give you answers. A proper evaluation will.</h2>
+    <p>Reserve your consultation with Dr. Preethi Mrinalini and finally understand your condition — before it affects your quality of life.</p>
+    <a class="btn btn--ink btn--lg" href="#book">Book my consultation</a>
+    <div class="chips">
+      <span class="chip">Limited slots each week</span>
+      <span class="chip">Reports reviewed personally</span>
+      <span class="chip">No-pressure guidance</span>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/Marina-logo_v7lcbn.png" alt="Marina's Clinic" />
+        <p>Gastro, laparoscopic &amp; bariatric surgical care in Nungambakkam, Chennai — led by Dr. Preethi Mrinalini.</p>
+        <div class="foot-soc">
+          <a href="https://instagram.com/dr.preethimrinalini" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.3 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .3-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.2-.4-.3-1-.4-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.3 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.1 0-3.5 0-4.7.1-1.1.1-1.7.2-2.1.4-.5.2-.9.4-1.2.8-.4.3-.6.7-.8 1.2-.2.4-.3 1-.4 2.1-.1 1.2-.1 1.6-.1 4.7s0 3.5.1 4.7c.1 1.1.2 1.7.4 2.1.2.5.4.9.8 1.2.3.4.7.6 1.2.8.4.2 1 .3 2.1.4 1.2.1 1.6.1 4.7.1s3.5 0 4.7-.1c1.1-.1 1.7-.2 2.1-.4.5-.2.9-.4 1.2-.8.4-.3.6-.7.8-1.2.2-.4.3-1 .4-2.1.1-1.2.1-1.6.1-4.7s0-3.5-.1-4.7c-.1-1.1-.2-1.7-.4-2.1a3.3 3.3 0 0 0-.8-1.2 3.3 3.3 0 0 0-1.2-.8c-.4-.2-1-.3-2.1-.4-1.2-.1-1.6-.1-4.7-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm6.2-8.3a1.1 1.1 0 1 1-2.3 0 1.1 1.1 0 0 1 2.3 0z"/></svg></a>
+          <a href="https://www.facebook.com/100066446485702" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+          <a href="https://youtube.com/@dr.preethimrinalini" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.2-.4-4.7c-.2-.8-.9-1.5-1.7-1.7C19.4 5.2 12 5.2 12 5.2s-7.4 0-8.9.4c-.8.2-1.5.9-1.7 1.7C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.8.9 1.5 1.7 1.7 1.5.4 8.9.4 8.9.4s7.4 0 8.9-.4c.8-.2 1.5-.9 1.7-1.7.4-1.5.4-4.7.4-4.7zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h5>Conditions</h5>
+        <ul>
+          <li><a href="#conditions">Hernia &amp; Diastasis Recti</a></li>
+          <li><a href="#conditions">Bariatric / Weight loss</a></li>
+          <li><a href="#conditions">Gallbladder Stones</a></li>
+          <li><a href="#conditions">Acid Reflux / GERD</a></li>
+          <li><a href="#conditions">Piles · Fissure · Fistula</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Clinic</h5>
+        <ul>
+          <li><a href="#surgeon">Your surgeon</a></li>
+          <li><a href="#reviews">Patient reviews</a></li>
+          <li><a href="#selfcheck">Symptom self-check</a></li>
+          <li><a href="#locations">Locations &amp; hours</a></li>
+          <li><a href="#book">Book consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Reach us</h5>
+        <ul class="foot-contact">
+          <li><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>40 &amp; 54, Josier St, Nungambakkam, Chennai 600034</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="tel:+919884000171">+91 98840 00171</a></li>
+          <li><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M4 6l8 6 8-6"/></svg><span>Mon – Sat · 5 PM – 8 PM (clinic)</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p class="disc"><b>Medical disclaimer:</b> This page is for general awareness and to help you book a consultation. It is not medical advice, diagnosis or treatment, and the symptom self-check is not a diagnostic tool. Outcomes, benefits and recovery vary from person to person. Always consult a qualified medical professional regarding your individual condition.</p>
+      <div class="row">
+        <span>© 2026 Marina's Clinic — Gastro &amp; General Surgery. All rights reserved.</span>
+        <span>Nungambakkam, Chennai · Tamil Nadu</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- sticky bar -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="wrap sticky-inner">
+    <div class="sticky-l">
+      <span class="dot"></span>
+      <b>Limited consultation slots <span class="hide-sm">this week</span></b>
+      <span class="cd" id="countdown">15:00</span>
+    </div>
+    <div class="sticky-r">
+      <a class="btn btn--primary" href="#book">Reserve my slot</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // mobile nav
+  var burger = document.getElementById('burger');
+  var navLinks = document.getElementById('navLinks');
+  burger.addEventListener('click', function(){
+    var open = navLinks.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ navLinks.classList.remove('open'); burger.setAttribute('aria-expanded','false'); });
+  });
+
+  // reveal on scroll
+  var io;
+  if ('IntersectionObserver' in window){
+    io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // self-check meter
+  var syms = Array.prototype.slice.call(document.querySelectorAll('.sym'));
+  var fg = document.getElementById('meterFg');
+  var num = document.getElementById('meterNum');
+  var msg = document.getElementById('checkMsg');
+  var CIRC = 2 * Math.PI * 64; // ~402
+  fg.setAttribute('stroke-dasharray', CIRC.toFixed(1));
+  fg.setAttribute('stroke-dashoffset', CIRC.toFixed(1));
+  function updateMeter(){
+    var n = syms.filter(function(s){return s.checked;}).length;
+    var pct = n / syms.length;
+    fg.setAttribute('stroke-dashoffset', (CIRC * (1 - pct)).toFixed(1));
+    num.textContent = n;
+    if(n === 0){ msg.textContent = "Tick what applies above to see whether an assessment is worth your time."; }
+    else if(n <= 2){ msg.textContent = "Even one ongoing symptom is worth a proper check before it settles in."; }
+    else if(n <= 4){ msg.textContent = "That's more than most people ignore for months. A focused assessment will give you real answers."; }
+    else { msg.textContent = "Several of these together really shouldn't wait. Book a clear assessment with the surgeon."; }
+  }
+  syms.forEach(function(s){ s.addEventListener('change', updateMeter); });
+
+  // condition cards -> prefill form
+  var condSelect = document.getElementById('condition');
+  document.querySelectorAll('.cond').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var val = btn.getAttribute('data-cond');
+      if(condSelect){
+        for(var i=0;i<condSelect.options.length;i++){
+          if(condSelect.options[i].value === val || condSelect.options[i].text === val){ condSelect.selectedIndex = i; break; }
+        }
+      }
+      document.getElementById('book').scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.q button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var q = b.parentElement;
+      var panel = q.querySelector('.panel');
+      var open = q.classList.toggle('open');
+      b.setAttribute('aria-expanded', open ? 'true':'false');
+      panel.style.maxHeight = open ? (panel.scrollHeight + 'px') : '0px';
+    });
+  });
+
+  // video scroller
+  var row = document.getElementById('vidRow');
+  document.getElementById('vNext').addEventListener('click', function(){ row.scrollBy({left:300, behavior:'smooth'}); });
+  document.getElementById('vPrev').addEventListener('click', function(){ row.scrollBy({left:-300, behavior:'smooth'}); });
+
+  // sticky bar reveal after hero
+  var bar = document.getElementById('stickyBar');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 700){ bar.classList.add('show'); } else { bar.classList.remove('show'); }
+  }, {passive:true});
+
+  // countdown (in-memory, resets on reload)
+  var total = 15 * 60;
+  var cd = document.getElementById('countdown');
+  var timer = setInterval(function(){
+    total--;
+    if(total <= 0){ total = 0; clearInterval(timer); }
+    var m = Math.floor(total/60), s = total % 60;
+    cd.textContent = m + ':' + (s < 10 ? '0'+s : s);
+  }, 1000);
+
+  // lead form
+  var form = document.getElementById('leadForm');
+  var phone = document.getElementById('phone');
+  phone.addEventListener('input', function(){ phone.value = phone.value.replace(/\D/g,'').slice(0,10); });
+
+  function setErr(id, bad){ document.getElementById(id).classList.toggle('invalid', bad); }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim();
+    var ph = phone.value.trim();
+    var cond = condSelect.value;
+    var slot = document.getElementById('slot').value;
+    var note = document.getElementById('msg').value.trim();
+
+    var nameBad = name.length < 2;
+    var phoneBad = !/^[6-9]\d{9}$/.test(ph);
+    var condBad = !cond;
+    setErr('f-name', nameBad);
+    setErr('f-phone', phoneBad);
+    setErr('f-cond', condBad);
+    if(nameBad || phoneBad || condBad){
+      var firstBad = document.querySelector('.field.invalid');
+      if(firstBad) firstBad.scrollIntoView({behavior:'smooth', block:'center'});
+      return;
+    }
+
+    /* ===== CONNECT YOUR BACKEND HERE =====
+       Replace this block with a POST to your endpoint / TeleCRM, e.g.:
+       fetch('/api/leads', { method:'POST', headers:{'Content-Type':'application/json'},
+         body: JSON.stringify({name, phone:ph, condition:cond, slot, note}) });
+    */
+
+    // WhatsApp fallback / confirmation
+    var text = "New consultation request%0A%0AName: " + encodeURIComponent(name) +
+               "%0APhone: " + encodeURIComponent(ph) +
+               "%0ACondition: " + encodeURIComponent(cond) +
+               "%0APreferred: " + encodeURIComponent(slot || 'Either') +
+               (note ? ("%0ANote: " + encodeURIComponent(note)) : "");
+    document.getElementById('waConfirm').setAttribute('href', 'https://wa.me/919884000171?text=' + text);
+
+    document.getElementById('formMain').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+    document.getElementById('formSuccess').scrollIntoView({behavior:'smooth', block:'center'});
+  });
+
+})();
+</script>
+</body>
+</html>
