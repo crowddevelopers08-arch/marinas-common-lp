@@ -8,12 +8,14 @@ import { button, cardShadow, cx, displayFont, eyebrowDark, leadDark, section, wr
 
 export function Booking({ selectedCondition }: { selectedCondition: string }) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [invalid, setInvalid] = useState<string[]>([]);
   const [phone, setPhone] = useState("");
   const [condition, setCondition] = useState(selectedCondition);
   const [waHref, setWaHref] = useState("https://wa.me/919884000171");
 
-  function submit(event: FormEvent<HTMLFormElement>) {
+  async function submit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
     const name = String(data.get("name") || "").trim();
@@ -22,11 +24,35 @@ export function Booking({ selectedCondition }: { selectedCondition: string }) {
     const note = String(data.get("msg") || "").trim();
     const bad = [name.length < 2 && "name", !/^[6-9]\d{9}$/.test(phone) && "phone", !cond && "condition"].filter(Boolean) as string[];
     setInvalid(bad);
+    setSubmitError("");
     if (bad.length) return;
+
+    setSubmitting(true);
+    try {
+      const response = await fetch("/api/submissions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          source: "Booking Form",
+          name,
+          phone,
+          concern: cond,
+          appointmentDateTime: slot,
+          pageUrl: typeof window !== "undefined" ? window.location.href : "",
+          ...(note ? { note } : {}),
+        }),
+      });
+      if (!response.ok) throw new Error("Submission failed");
+    } catch {
+      setSubmitError("Sorry, we could not save your request. Please try again or message us on WhatsApp.");
+      setSubmitting(false);
+      return;
+    }
 
     const text = `New consultation request\n\nName: ${name}\nPhone: ${phone}\nCondition: ${cond}\nPreferred: ${slot || "Either"}${note ? `\nNote: ${note}` : ""}`;
     setWaHref(`https://wa.me/919884000171?text=${encodeURIComponent(text)}`);
     setSubmitted(true);
+    setSubmitting(false);
   }
 
   const fieldClass = (name: string) => invalid.includes(name);
@@ -93,7 +119,8 @@ export function Booking({ selectedCondition }: { selectedCondition: string }) {
                     <label className="mb-[7px] block text-[13px] font-bold text-[#14241f]" htmlFor="msg">Anything you&apos;d like to add (optional)</label>
                     <textarea className={cx(control, "min-h-[78px] resize-y")} id="msg" name="msg" placeholder="Symptoms, how long, any reports you have..." />
                   </div>
-                  <button type="submit" className={cx(button.primary, button.block, button.lg)}>Request my consultation</button>
+                  {submitError && <div className="mb-3 rounded-[11px] border border-[#f3c2c2] bg-[#fff5f5] p-3 text-[13px] font-semibold text-[#a23b3b]">{submitError}</div>}
+                  <button type="submit" disabled={submitting} className={cx(button.primary, button.block, button.lg, submitting && "cursor-wait opacity-70")}>{submitting ? "Sending..." : "Request my consultation"}</button>
                   <p className="mt-3.5 text-center text-xs text-[#46554f]">Your details are kept private and used only to contact you about your appointment.</p>
                 </form>
                 <div className="my-[18px] flex items-center gap-3 text-[12.5px] font-semibold text-[#46554f] before:h-px before:flex-1 before:bg-[#d5eef2] before:content-[''] after:h-px after:flex-1 after:bg-[#d5eef2] after:content-['']">or reach us directly</div>

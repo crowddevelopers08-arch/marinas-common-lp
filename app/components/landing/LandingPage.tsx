@@ -41,7 +41,7 @@ export default function LandingPage() {
         <VideoStories />
         <ReviewsServicesLocations />
         <ClinicServices />
-        <ClinicLocations />
+        {/* <ClinicLocations /> */}
         <Booking key={selectedCondition} selectedCondition={selectedCondition} />
         <FAQFinalFooter />
       </main>

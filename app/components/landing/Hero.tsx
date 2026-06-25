@@ -1,21 +1,12 @@
-import { doctor, videos } from "./data";
+import { videos } from "./data";
 import { button, cardShadow, cx, displayFont, eyebrowDark, lens, smallShadow, wrap } from "./styles";
-
-const heroBackgrounds = [
-  doctor,
-  videos[0].replace("/video/upload/", "/video/upload/so_1/").replace(".mp4", ".jpg"),
-  videos[2].replace("/video/upload/", "/video/upload/so_1/").replace(".mp4", ".jpg"),
-];
 
 const BgLayers = () => (
   <div className="absolute inset-0" aria-hidden="true">
-    {heroBackgrounds.map((src, index) => (
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 [animation:hero-bg-fade_18s_linear_infinite]"
-        key={src}
-        style={{ animationDelay: `${index * 6}s`, backgroundImage: `url(${src})` }}
-      />
-    ))}
+    <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 [animation:hero-bg-fade_12s_linear_infinite]" style={{ animationDelay: "0s", backgroundImage: "url('/bg-image.png')" }} />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-0 [animation:hero-bg-fade_12s_linear_infinite]" style={{ animationDelay: "6s", backgroundImage: "url('/bg-images.png')" }} />
+    </div>
     <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(20,36,31,.74)_0%,rgba(20,36,31,.9)_42%,rgba(20,36,31,.96)_100%)]" />
     <div className="absolute inset-0 bg-[radial-gradient(80%_80%_at_85%_8%,rgba(80,192,208,.26)_0%,rgba(80,192,208,0)_58%)]" />
   </div>

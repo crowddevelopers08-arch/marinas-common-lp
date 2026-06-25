@@ -34,7 +34,7 @@ export default function RootLayout({
       lang="en"
       className={`${jakarta.variable} ${fraunces.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full overflow-x-hidden bg-white font-[family-name:var(--font-jakarta)] leading-[1.6] text-[#14241f] antialiased">
+      <body suppressHydrationWarning className="min-h-full overflow-x-hidden bg-white font-[family-name:var(--font-jakarta)] leading-[1.6] text-[#14241f] antialiased">
         {children}
       </body>
     </html>
