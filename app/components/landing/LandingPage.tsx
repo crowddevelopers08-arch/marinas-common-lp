@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { AwarenessSections } from "./AwarenessSections";
+import { BeforeAfterIImage } from "./BeforeAfterIImage";
 import { BenefitsStepsVideos } from "./BenefitsStepsVideos";
 import { Booking } from "./Booking";
 import { ClinicLocations } from "./ClinicLocations";
@@ -34,6 +35,7 @@ export default function LandingPage() {
         <Hero />
         <Marquee />
         <Conditions onPick={pickCondition} />
+        <BeforeAfterIImage />
         <SelfCheck />
         <AwarenessSections />
         <Surgeon />

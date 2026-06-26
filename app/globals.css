@@ -2,6 +2,7 @@
 
 @theme {
   --animate-marquee: marquee 32s linear infinite;
+  --animate-before-after: marquee 54s linear infinite;
 
   @keyframes marquee {
     from {
