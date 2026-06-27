@@ -9,7 +9,7 @@ const videoStories = [
   {
     src: videos[0],
     title: "Clinic guidance",
-    description: "Watch shorts clinic videos to understand the doctor, the care approach and what patients can expect.",
+    description: "Watch short clinic videos to understand the doctor, the care approach and what patients can expect.",
     type: "video/mp4",
   },
   {
