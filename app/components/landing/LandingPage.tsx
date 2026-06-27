@@ -35,8 +35,8 @@ export default function LandingPage() {
         <Hero />
         <Marquee />
         <Conditions onPick={pickCondition} />
-        <BeforeAfterIImage />
         <SelfCheck />
+        <BeforeAfterIImage />
         <AwarenessSections />
         <Surgeon />
         <BenefitsStepsVideos />
