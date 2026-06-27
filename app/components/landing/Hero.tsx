@@ -1,5 +1,5 @@
-import { videos } from "./data";
-import { button, cardShadow, cx, displayFont, eyebrowDark, lens, smallShadow, wrap } from "./styles";
+import { button, cx, displayFont, eyebrowDark, lens, smallShadow, wrap } from "./styles";
+import { HeroVideoSlider } from "./HeroVideoSlider";
 
 const BgLayers = () => (
   <div className="absolute inset-0" aria-hidden="true">
@@ -44,17 +44,12 @@ export function Hero() {
             <p className="mt-4 text-[13px] text-[#c9e7eb]">Limited clinic slots each week at Nungambakkam and Apollo, Greams Road.</p>
           </div>
           <div className="w-full max-w-[560px] justify-self-end">
-            <div className={cx("relative overflow-hidden rounded-[28px] border border-white/15 bg-[#1e3f44]", cardShadow)}>
-              <span className="absolute left-4 top-4 z-[2] rounded-full bg-[#14241f]/80 px-3.5 py-2 text-[11.5px] font-bold uppercase tracking-[.08em] text-[#f2fbfc] backdrop-blur-md">Meet the surgeon</span>
-              <video className="block aspect-[16/13] w-full bg-[#1e3f44] object-cover" autoPlay muted loop playsInline preload="metadata">
-                <source src={videos[1]} type="video/mp4" />
-              </video>
-            </div>
-            <div className={cx("relative mt-3 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#d5eef2] bg-[#d5eef2] text-[#14241f]", smallShadow)}>
+            <HeroVideoSlider />
+            <div className={cx("relative mt-3 grid grid-cols-4 gap-px overflow-hidden rounded-2xl border border-[#d5eef2] bg-[#d5eef2] text-[#14241f]", smallShadow)}>
               {infoGrid.map(([label, value]) => (
-                <div className="bg-white px-4 py-4 text-center" key={label}>
-                  <span className="block text-[11px] font-bold uppercase tracking-[.1em] text-[#46554f]">{label}</span>
-                  <b className={cx(displayFont, "mt-1 block text-[17px]")}>{value}</b>
+                <div className="bg-white px-3 py-3.5 text-center" key={label}>
+                  <span className="block text-[10px] font-bold uppercase tracking-[.1em] text-[#46554f]">{label}</span>
+                  <b className={cx(displayFont, "mt-1 block text-[15px]")}>{value}</b>
                 </div>
               ))}
             </div>
@@ -73,17 +68,12 @@ export function Hero() {
           <p className="text-[clamp(15px,4vw,17px)] leading-[1.72] text-[#d7f0f3]">
             Hernia, gallstones, acid reflux, piles, obesity and more. Book a focused consultation with Dr. Preethi Mrinalini, advanced laparoscopic and bariatric surgeon.
           </p>
-          <div className={cx("relative overflow-hidden rounded-[22px] border border-white/15 bg-[#1e3f44]", cardShadow)}>
-            <span className="absolute left-4 top-4 z-[2] rounded-full bg-[#14241f]/80 px-3.5 py-2 text-[11.5px] font-bold uppercase tracking-[.08em] text-[#f2fbfc] backdrop-blur-md">Meet the surgeon</span>
-            <video className="block aspect-[8/12] w-full bg-[#1e3f44] object-cover" autoPlay muted loop playsInline preload="metadata">
-              <source src={videos[1]} type="video/mp4" />
-            </video>
-          </div>
-          <div className={cx("grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-[#d5eef2] bg-[#d5eef2] text-[#14241f]", smallShadow)}>
+          <HeroVideoSlider />
+          <div className={cx("grid grid-cols-4 gap-px overflow-hidden rounded-2xl border border-[#d5eef2] bg-[#d5eef2] text-[#14241f]", smallShadow)}>
             {infoGrid.map(([label, value]) => (
-              <div className="bg-white px-4 py-4 text-center" key={label}>
-                <span className="block text-[11px] font-bold uppercase tracking-[.1em] text-[#46554f]">{label}</span>
-                <b className={cx(displayFont, "mt-1 block text-[17px]")}>{value}</b>
+              <div className="bg-white px-2 py-3 text-center" key={label}>
+                <span className="block text-[9px] font-bold uppercase tracking-[.1em] text-[#46554f]">{label}</span>
+                <b className={cx(displayFont, "mt-1 block text-[13px]")}>{value}</b>
               </div>
             ))}
           </div>
