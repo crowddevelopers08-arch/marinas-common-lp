@@ -25,13 +25,13 @@ const videoStories = [
     type: "video/mp4",
   },
   {
-    src: "/output 1hernia_squished.mp4",
+    src: "https://ik.imagekit.io/tpucbav8z/marinias1_squished.mp4",
     title: "Marinas care",
     description: "A closer look at the clinic experience and the support patients receive through treatment.",
     type: "video/mp4",
   },
   {
-    src: "/marinias1_squished.mp4",
+    src: "https://ik.imagekit.io/tpucbav8z/output%201hernia_squished.mp4",
     title: "Hernia care",
     description: "See how focused consultation and treatment planning help patients move with more confidence.",
     type: "video/mp4",
