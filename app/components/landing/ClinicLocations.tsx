@@ -12,7 +12,7 @@ export function ClinicLocations() {
         </Reveal>
         <div className="mt-[42px] grid grid-cols-2 gap-[18px] max-[760px]:grid-cols-1">
           {[
-            ["Evening clinic", "Marina's Clinic, Nungambakkam", "40 & 54, Josier St, Nungambakkam, Chennai 600034", "Mon - Sat, 5 PM - 8 PM"],
+            ["Evening clinic", "Marina's Clinic, Nungambakkam", "40 & 54, Josier St, Nungambakkam, Chennai 600034", "Mon - Sat, 4:30 PM - 7:00 PM"],
             ["Morning consultation", "Apollo Hospital, Greams Road", "21, Greams Lane, Thousand Lights, Chennai 600006", "Mon - Sat, 10 AM - 2 PM"],
           ].map(([pill, title, addr, hours]) => (
             <div className="reveal rounded-[18px] border border-[#d5eef2] bg-white p-7" key={title}>
