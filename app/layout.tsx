@@ -18,7 +18,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Marina's Clinic - Gastro, Laparoscopic & Bariatric Surgery in Chennai",
   description:
-    "Book a focused consultation with Dr. Preethi Mrinalini for hernia, gallstones, acid reflux, piles, obesity and more in Nungambakkam, Chennai.",
+    "Book a focused consultation with Dr. Preethi Mrinalini for hernia, gallstones, acid reflux, piles, obesity and mores in Nungambakkam, Chennai.",
   icons: {
     icon: "https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/Marina-logo_v7lcbn.png",
   },
