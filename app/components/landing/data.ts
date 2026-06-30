@@ -1,5 +1,5 @@
 export const logo =
-  "https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/Marina-logo_v7lcbn.png";
+  "https://res.cloudinary.com/daclbrdse/image/upload/v1782811583/Marina-logo-b_uvila0.png";
 
 export const doctor =
   "https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/dr-preethi-mrinalini_wmgdmk.webp";

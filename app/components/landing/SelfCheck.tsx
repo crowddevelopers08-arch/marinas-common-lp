@@ -42,7 +42,7 @@ export function SelfCheck() {
                   </div>
                 </div>
                 <p className="my-6 min-h-[42px] text-[14.5px] text-[#e3f7fa]">{msg}</p>
-                <a className={cx(button.primary, "w-full")} href="#book">
+                <a className={cx(button.primary, "w-full whitespace-nowrap max-[350px]:px-4 max-[350px]:py-3.5 max-[350px]:text-[14px]")} href="#booking">
                   Book my consultation
                 </a>
               </div>

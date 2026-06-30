@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { cardShadow, cx } from "./styles";
 
 const heroVideos = [
-  "https://ik.imagekit.io/tpucbav8z/marinias1_squished.mp4",
-  "https://ik.imagekit.io/tpucbav8z/output%201hernia_squished.mp4",
+  "https://res.cloudinary.com/daclbrdse/video/upload/v1782801995/output_1hernia_squished_vmlaw3.mp4",
+  "https://res.cloudinary.com/daclbrdse/video/upload/v1782813489/VSL_out_1_final_squished_gibpjp.mp4",
 ];
 
 export function HeroVideoSlider({ className }: { className?: string }) {
@@ -80,7 +80,7 @@ export function HeroVideoSlider({ className }: { className?: string }) {
       )}
 
       <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-        <span className="rounded-full bg-[#14241f]/80 px-3.5 py-2 text-[11.5px] font-bold uppercase tracking-[.08em] text-[#f2fbfc] backdrop-blur-md">
+        <span className="hidden rounded-full bg-[#14241f]/80 px-3.5 py-2 text-[11.5px] font-bold uppercase tracking-[.08em] text-[#f2fbfc] backdrop-blur-md min-[355px]:inline">
           Meet the surgeon
         </span>
         <div className="flex items-center gap-2.5">

@@ -3,16 +3,16 @@ import { cx, eyebrow, h2, lead, section, wrap } from "./styles";
 
 const beforeAfterPairs = [
   {
-    before: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782481294/before1_xgn99k.png",
-    after: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782466684/herina-image_dlichk.png",
+    before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/5_vcpte1.png",
+    after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/2_nbkgnk.png",
   },
   {
-    before: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782481295/before3_e8uz78.png",
-    after: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782466686/herina-image2_bwzqf4.png",
+    before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/3_ilod5l.png",
+    after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/1_psrsbj.png",
   },
   {
-    before: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782481294/before2_u3xi0i.png",
-    after: "https://res.cloudinary.com/dthj7fakc/image/upload/v1782466686/herina-image1_xan4cv.png",
+    before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/5_vcpte1.png",
+    after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/3_ilod5l.png",
   },
 ];
 

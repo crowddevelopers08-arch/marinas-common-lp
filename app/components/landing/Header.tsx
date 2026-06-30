@@ -28,13 +28,13 @@ export function Header() {
       <header className="sticky top-0 z-[60] border-b border-[#d5eef2] bg-white/90 backdrop-blur-md">
         <div className={cx(wrap, "relative flex min-h-[74px] items-center justify-between gap-5 py-3 max-[760px]:min-h-[68px] max-[760px]:gap-3")}>
           <a className="group flex min-w-0 items-center gap-3.5" href="#top" aria-label="Marina's Clinic home">
-            <span className="flex size-[80px] items-center justify-center bg-white shadow-[0_8px_22px_-18px_rgba(10,40,40,.28)] transition group-hover:border-[#3aaeba] max-[760px]:size-[60px]">
+            <span className="flex items-center justify-center transition group-hover:border-[#3aaeba] max-[760px]:size-[60px]">
               <img className="h-[78px] w-auto max-[760px]:h-[59px]" src={logo} alt="Marina's Clinic logo" />
             </span>
           </a>
           <nav
             className={cx(
-              "flex items-center gap-1.5 rounded-full border border-[#d5eef2] bg-white/80 p-1.5 shadow-[0_1px_2px_rgba(10,40,40,.04)] max-[760px]:absolute max-[760px]:left-6 max-[760px]:right-6 max-[760px]:top-[calc(100%+1px)] max-[760px]:rounded-2xl max-[760px]:p-2 max-[760px]:shadow-[0_18px_50px_-20px_rgba(10,40,40,.28)]",
+              "flex items-center gap-1.5 rounded-full border border-[#d5eef2] bg-white p-1.5 shadow-[0_1px_2px_rgba(10,40,40,.04)] max-[760px]:absolute max-[760px]:left-6 max-[760px]:right-6 max-[760px]:top-[calc(100%+1px)] max-[760px]:rounded-2xl max-[760px]:p-2 max-[760px]:shadow-[0_18px_50px_-20px_rgba(10,40,40,.28)]",
               open ? "max-[760px]:flex max-[760px]:flex-col max-[760px]:items-stretch max-[760px]:gap-1" : "max-[760px]:hidden",
             )}
           >
@@ -51,7 +51,7 @@ export function Header() {
               </span>
               +91 98840 00171
             </a>
-            <a className={cx(button.primary, "px-5 py-3.5 text-[14.5px] max-[420px]:hidden")} href="#book">
+            <a className={cx(button.primary, "px-5 py-3.5 text-[14.5px] max-[420px]:hidden")} href="#booking">
               Book consultation
             </a>
             <button className="hidden size-11 cursor-pointer items-center justify-center rounded-full border border-[#d5eef2] bg-white text-[#14241f] transition hover:border-[#3aaeba] hover:text-[#3aaeba] max-[760px]:flex" type="button" aria-label="Open menu" aria-expanded={open} onClick={() => setOpen(!open)}>

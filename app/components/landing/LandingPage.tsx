@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect } from "react";
 import { AwarenessSections } from "./AwarenessSections";
 import { BeforeAfterIImage } from "./BeforeAfterIImage";
 import { BenefitsStepsVideos } from "./BenefitsStepsVideos";
@@ -20,13 +20,24 @@ import { useRevealEffects } from "./useRevealEffects";
 import { VideoStories } from "./VideoStories";
 
 export default function LandingPage() {
-  const [selectedCondition, setSelectedCondition] = useState("");
   useRevealEffects();
 
-  function pickCondition(condition: string) {
-    setSelectedCondition(condition);
-    document.getElementById("book")?.scrollIntoView({ behavior: "smooth" });
+  function openBlankBooking() {
+    window.dispatchEvent(new Event("booking:reset"));
+    document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
   }
+
+  useEffect(() => {
+    const resetBookingOnLinkClick = (event: MouseEvent) => {
+      if (!(event.target instanceof Element)) return;
+      const link = event.target.closest('a[href="#booking"]');
+      if (!link) return;
+      window.dispatchEvent(new Event("booking:reset"));
+    };
+
+    document.addEventListener("click", resetBookingOnLinkClick);
+    return () => document.removeEventListener("click", resetBookingOnLinkClick);
+  }, []);
 
   return (
     <>
@@ -34,7 +45,7 @@ export default function LandingPage() {
       <main>
         <Hero />
         <Marquee />
-        <Conditions onPick={pickCondition} />
+        <Conditions onPick={openBlankBooking} />
         <SelfCheck />
         <BeforeAfterIImage />
         <AwarenessSections />
@@ -44,7 +55,7 @@ export default function LandingPage() {
         <ReviewsServicesLocations />
         <ClinicServices />
         {/* <ClinicLocations /> */}
-        <Booking key={selectedCondition} selectedCondition={selectedCondition} />
+        <Booking />
         <FAQFinalFooter />
       </main>
       <StickyBar />

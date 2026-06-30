@@ -37,7 +37,7 @@ export function FAQFinalFooter() {
           <span className={cx(eyebrow, "justify-center text-white")}>Take the first step</span>
           <h2 className="mx-auto mt-4 max-w-[20ch] font-[family-name:var(--font-fraunces)] text-[clamp(28px,4vw,46px)] font-semibold leading-[1.06]">Ignoring the symptoms will not give you answers. A proper evaluation will.</h2>
           <p className="mx-auto mt-[18px] max-w-[50ch] text-[17px] text-[#e2f7fa]">Reserve your consultation with Dr. Preethi Mrinalini and finally understand your condition before it affects your quality of life.</p>
-          <a className={cx(button.ink, button.lg, "mt-[30px]")} href="#book">Book my consultation</a>
+          <a className={cx(button.ink, button.lg, "mt-[30px]")} href="#booking">Book my consultation</a>
           <div className="mt-6 flex flex-wrap justify-center gap-2.5">
             {["Limited slots each week", "Reports reviewed personally", "No-pressure guidance"].map((chip) => <span className="rounded-full border border-white/25 bg-white/15 px-4 py-2 text-[13px] font-semibold" key={chip}>{chip}</span>)}
           </div>
