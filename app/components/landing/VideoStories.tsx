@@ -90,6 +90,21 @@ export function VideoStories() {
             ))}
           </div>
         </div>
+
+        <div className="mx-auto mt-8 flex max-w-[760px] flex-col items-center gap-4 text-center">
+          <p className="m-0 text-[15px] leading-[1.65] text-[#c9e7eb]">
+            Want to watch the full videos and more patient education clips? Follow Dr. Preethi Mrinalini on Instagram.
+          </p>
+          <a
+            className="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/15 bg-white/10 px-5 py-3 text-sm font-bold text-white transition hover:border-[#50c0d0] hover:bg-white/15"
+            href="https://www.instagram.com/dr.preethimrinalini?igsh=YWkzdmlsc3l0aWF5"
+            target="_blank"
+            rel="noopener"
+          >
+            <Icon className="size-4 fill-current" name="instagram" />
+            Watch full videos on Instagram
+          </a>
+        </div>
       </div>
     </section>
   );

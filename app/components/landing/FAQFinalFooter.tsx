@@ -18,9 +18,9 @@ export function FAQFinalFooter() {
             <h2 className={cx(h2, "mx-auto")}>Common questions, answered.</h2>
             <p className={cx(lead, "mx-auto")}>Get clear answers about consultation, reports, surgery decisions and what to expect next.</p>
           </Reveal>
-          <div className="mx-auto mt-[42px] max-w-[820px]">
+          <div className="mx-auto mt-[42px] grid max-w-[1100px] grid-cols-2 gap-3 max-[760px]:grid-cols-1">
             {faqs.map(([question, answer], index) => (
-              <div className={cx("mb-3 overflow-hidden rounded-[14px] border bg-white", open === index ? "border-[#3aaeba] shadow-[0_1px_2px_rgba(10,40,40,.06),0_6px_18px_rgba(10,40,40,.05)]" : "border-[#d5eef2]")} key={question}>
+              <div className={cx("overflow-hidden rounded-[14px] border bg-white", open === index ? "border-[#3aaeba] shadow-[0_1px_2px_rgba(10,40,40,.06),0_6px_18px_rgba(10,40,40,.05)]" : "border-[#d5eef2]")} key={question}>
                 <button className="flex w-full cursor-pointer items-center justify-between gap-4 bg-transparent p-[20px_22px] text-left font-[family-name:var(--font-fraunces)] text-[16.5px] font-semibold text-[#14241f]" type="button" aria-expanded={open === index} onClick={() => setOpen(open === index ? null : index)}>
                   {question}<span className={cx("flex size-[30px] shrink-0 items-center justify-center rounded-full transition", open === index ? "rotate-45 bg-[#3aaeba] text-white" : "bg-[#effbfc] text-[#3aaeba]")}><Icon className="size-3.5 stroke-current stroke-[2.4]" name="check" /></span>
                 </button>
@@ -45,14 +45,14 @@ export function FAQFinalFooter() {
       </section>
       <footer className="bg-[#14241f] py-16 pb-[110px] text-[#c8dde1]">
         <div className={wrap}>
-          <div className="grid grid-cols-[1.4fr_1fr_1fr_1.2fr] gap-9 max-[980px]:grid-cols-2 max-[760px]:grid-cols-1">
+          <div className="grid grid-cols-2 gap-9 max-[760px]:grid-cols-1">
             <div>
               <img className="mb-4 h-12 w-auto" src={logo} alt="Marina's Clinic" />
               <p className="max-w-[30ch] text-[13.5px] text-[#9db6ba]">Gastro, laparoscopic and bariatric surgical care in Nungambakkam, Chennai, led by Dr. Preethi Mrinalini.</p>
               <div className="mt-[18px] flex gap-2.5">
-                <a className="flex size-10 items-center justify-center rounded-full border border-white/15 transition hover:border-[#50c0d0] hover:bg-[#50c0d0]/15" href="https://instagram.com/dr.preethimrinalini" target="_blank" rel="noopener" aria-label="Instagram"><Icon className="size-[18px] fill-[#d7f0f3]" name="instagram" /></a>
-                <a className="flex size-10 items-center justify-center rounded-full border border-white/15 transition hover:border-[#50c0d0] hover:bg-[#50c0d0]/15" href="https://www.facebook.com/100066446485702" target="_blank" rel="noopener" aria-label="Facebook"><Icon className="size-[18px] fill-[#d7f0f3]" name="facebook" /></a>
-                <a className="flex size-10 items-center justify-center rounded-full border border-white/15 transition hover:border-[#50c0d0] hover:bg-[#50c0d0]/15" href="https://youtube.com/@dr.preethimrinalini" target="_blank" rel="noopener" aria-label="YouTube"><Icon className="size-[18px] fill-[#d7f0f3]" name="youtube" /></a>
+                <a className="flex size-10 items-center justify-center rounded-full bg-white/10 border border-white/30 transition hover:bg-[#e1306c] hover:border-[#e1306c]" href="https://instagram.com/dr.preethimrinalini" target="_blank" rel="noopener" aria-label="Instagram"><Icon className="size-[18px] text-white" name="instagram" /></a>
+                <a className="flex size-10 items-center justify-center rounded-full bg-white/10 border border-white/30 transition hover:bg-[#1877f2] hover:border-[#1877f2]" href="https://www.facebook.com/100066446485702" target="_blank" rel="noopener" aria-label="Facebook"><Icon className="size-[18px] text-white" name="facebook" /></a>
+                <a className="flex size-10 items-center justify-center rounded-full bg-white/10 border border-white/30 transition hover:bg-[#ff0000] hover:border-[#ff0000]" href="https://youtube.com/@dr.preethimrinalini" target="_blank" rel="noopener" aria-label="YouTube"><Icon className="size-[18px] text-white" name="youtube" /></a>
               </div>
             </div>
             <FooterLinks title="Conditions" links={["Hernia & Diastasis Recti", "Bariatric / Weight loss", "Gallbladder Stones", "Acid Reflux / GERD", "Piles / Fissure / Fistula"]} />

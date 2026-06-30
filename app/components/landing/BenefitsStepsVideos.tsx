@@ -9,6 +9,8 @@ import { cx, displayFont, eyebrow, h2, lead, section, wrap } from "./styles";
 function Carousel({ children }: { children: React.ReactNode[] }) {
   const [active, setActive] = useState(0);
   const count = children.length;
+  const goPrev = () => setActive((i) => (i - 1 + count) % count);
+  const goNext = () => setActive((i) => (i + 1) % count);
 
   useEffect(() => {
     const timer = setInterval(() => setActive((i) => (i + 1) % count), 7000);
@@ -27,16 +29,23 @@ function Carousel({ children }: { children: React.ReactNode[] }) {
           ))}
         </div>
       </div>
-      <div className="mt-5 flex justify-center gap-2">
-        {children.map((_, i) => (
-          <button
-            key={i}
-            type="button"
-            aria-label={`Go to slide ${i + 1}`}
-            className={cx("h-1.5 rounded-full transition-all duration-300", i === active ? "w-8 bg-[#50c0d0]" : "w-3 bg-[#14241f]/15")}
-            onClick={() => setActive(i)}
-          />
-        ))}
+      <div className="mt-5 flex justify-center gap-3">
+        <button
+          type="button"
+          aria-label="Previous slide"
+          className="flex size-10 items-center justify-center rounded-full border border-[#d5eef2] bg-white text-[#3aaeba] shadow-[0_1px_2px_rgba(10,40,40,.06)] transition hover:border-[#50c0d0] hover:bg-[#effbfc]"
+          onClick={goPrev}
+        >
+          <Icon className="size-4 rotate-180 stroke-current" name="arrow" />
+        </button>
+        <button
+          type="button"
+          aria-label="Next slide"
+          className="flex size-10 items-center justify-center rounded-full border border-[#d5eef2] bg-white text-[#3aaeba] shadow-[0_1px_2px_rgba(10,40,40,.06)] transition hover:border-[#50c0d0] hover:bg-[#effbfc]"
+          onClick={goNext}
+        >
+          <Icon className="size-4 stroke-current" name="arrow" />
+        </button>
       </div>
     </div>
   );

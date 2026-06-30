@@ -39,7 +39,6 @@ export function Hero() {
             </div>
             <div className="mt-[34px] flex flex-wrap gap-3">
               <a className={cx(button.primary, button.lg)} href="#booking">Book my consultation</a>
-              <a className={cx(button.ghostDark, button.lg)} href="#booking">Book consultation</a>
             </div>
             <p className="mt-4 text-[13px] text-[#c9e7eb]">Limited clinic slots each week at Nungambakkam and Apollo, Greams Road.</p>
           </div>
@@ -86,7 +85,6 @@ export function Hero() {
           </div>
           <div className="flex flex-col gap-3">
             <a className={cx(button.primary, button.lg, "flex-1 text-center")} href="#booking">Book my consultation</a>
-            <a className={cx(button.ghostDark, button.lg, "flex-1 text-center")} href="#booking">Book consultation</a>
           </div>
           <p className="text-[13px] text-[#c9e7eb]">Limited clinic slots each week at Nungambakkam and Apollo, Greams Road.</p>
         </div>
