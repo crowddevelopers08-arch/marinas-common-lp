@@ -13,7 +13,7 @@ const BgLayers = () => (
 );
 
 const badges = ["No-pressure guidance", "Reports reviewed", "Insurance support"];
-const infoGrid = [["Clinic", "Nungambakkam"], ["Timing", "5-8 PM"], ["Surgeon", "Female"], ["Care", "Keyhole"]];
+const infoGrid = [["Clinic", "Nungambakkam"], ["Timing", "4:30 - 7:00 PM"], ["Surgeon", "Female"], ["Care", "Keyhole"]];
 
 export function Hero() {
   return (
