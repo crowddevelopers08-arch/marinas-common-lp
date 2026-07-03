@@ -10,10 +10,10 @@ const beforeAfterPairs = [
     before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/3_ilod5l.png",
     after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/1_psrsbj.png",
   },
-  // {
-  //   before: "",
-  //   after: "",
-  // },
+  {
+    before: "/bfaf.png",
+    after: "/bfaf-8.png",
+  },
 ];
 
 export function BeforeAfterIImage() {

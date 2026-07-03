@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import { Header } from "../components/landing/Header";
 import { Icon } from "../components/landing/Icon";
 import { button, cardShadow, cx, displayFont, section, wrap } from "../components/landing/styles";
@@ -27,6 +28,15 @@ export default async function ThankYouPage({
 
   return (
     <>
+      {/* Google Ads Conversion Tracking */}
+      <Script id="google-ads-conversion" strategy="afterInteractive">
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-18283354880/xUDNCN-DtsgcEIC2l45E'
+          });
+        `}
+      </Script>
+
       <Header />
       <main className={cx(section, "min-h-[70vh]")}>
         <div className={cx(wrap, "flex justify-center")}>

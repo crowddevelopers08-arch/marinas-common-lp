@@ -47,7 +47,7 @@ export function VideoStories() {
       <div className={wrap}>
         <div className="mx-auto max-w-[760px] text-center">
           <span className={cx(eyebrow, "mx-auto flex w-fit justify-center text-[#bfeff5] before:hidden")}>What Doctor Say</span>
-          <h2 className={cx(h2, "mx-auto text-white")}>Stories From Those Who Chose Change</h2>
+          <h2 className={cx(h2, "mx-auto text-white")}>Quick videos. Clear answers. Better decisions.</h2>
           <p className={cx(lead, "mx-auto text-[#c9e7eb]")}>Watch short clinic videos to understand the doctor, the care approach and what patients can expect.</p>
         </div>
 
