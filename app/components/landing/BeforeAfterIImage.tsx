@@ -10,7 +10,8 @@ const images = [
   "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/1_bw9jb1.png",
 ];
 
-export function BeforeAfterImage() {
+export function BeforeAfterIImage() {
+  // Duplicate images for smooth infinite scrolling
   const carouselImages = [...images, ...images];
 
   return (
@@ -37,7 +38,7 @@ export function BeforeAfterImage() {
       </div>
 
       <div className="mt-10 overflow-hidden px-4 max-[760px]:px-3">
-        <div className="flex w-max animate-before-after [animation-duration:30s] hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-before-after hover:[animation-play-state:paused]">
           {carouselImages.map((src, index) => (
             <article
               key={index}
