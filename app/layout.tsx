@@ -52,9 +52,8 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-full overflow-x-hidden bg-white font-[family-name:var(--font-jakarta)] leading-[1.6] text-[#14241f] antialiased"
       >
-        {/* Google Ads Tag */}
+        {/* Google Ads Global Site Tag */}
         <Script
-          async
           src="https://www.googletagmanager.com/gtag/js?id=AW-18174223501"
           strategy="afterInteractive"
         />
@@ -64,7 +63,13 @@ export default function RootLayout({
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
+
             gtag('config', 'AW-18174223501');
+
+            // Phone Call Conversion Tracking
+            gtag('config', 'AW-18174223501/TNojCL3KxcocEI3JktpD', {
+              phone_conversion_number: '09884000171'
+            });
           `}
         </Script>
 
