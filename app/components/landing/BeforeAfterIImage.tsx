@@ -27,7 +27,7 @@ export function BeforeAfterImage() {
           </span>
 
           <h2 className={cx(h2, "mx-auto")}>
-            Real patient treatment results.
+            Real Patient Treatment Results
           </h2>
 
           <p className={cx(lead, "mx-auto")}>
@@ -36,22 +36,23 @@ export function BeforeAfterImage() {
         </div>
       </div>
 
-      <div className="mt-10 overflow-hidden px-4">
+      <div className="mt-10 overflow-hidden px-4 max-[760px]:px-3">
         <div className="flex w-max animate-before-after [animation-duration:30s] hover:[animation-play-state:paused]">
           {carouselImages.map((src, index) => (
-            <div
+            <article
               key={index}
-              className="mr-4 shrink-0 overflow-hidden rounded-2xl border border-[#d5eef2] bg-[#effbfc] p-2 shadow-[0_1px_2px_rgba(10,40,40,.06),0_10px_24px_rgba(10,40,40,.08)]"
+              className="mr-4 shrink-0 overflow-hidden rounded-[18px] border border-[#d5eef2] bg-[#effbfc] p-2 shadow-[0_1px_2px_rgba(10,40,40,.06),0_10px_24px_rgba(10,40,40,.08)] max-[760px]:mr-3"
             >
               <Image
                 src={src}
                 alt={`Patient Result ${index + 1}`}
                 width={416}
                 height={520}
-                className="block aspect-[4/5] w-[min(70vw,260px)] rounded-xl object-cover"
+                className="block aspect-[4/5] w-[min(70vw,260px)] rounded-[14px] object-cover"
                 sizes="(max-width:760px) 41vw, 260px"
+                priority={index < 6}
               />
-            </div>
+            </article>
           ))}
         </div>
       </div>
