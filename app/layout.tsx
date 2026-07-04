@@ -53,15 +53,20 @@ export default function RootLayout({
         className="min-h-full overflow-x-hidden bg-white font-[family-name:var(--font-jakarta)] leading-[1.6] text-[#14241f] antialiased"
       >
         {/* Google Ads Tag */}
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18174223501"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18174223501"
+          strategy="afterInteractive"
+        />
 
-  gtag('config', 'AW-18174223501');
-</script>
+        <Script id="google-ads" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18174223501');
+          `}
+        </Script>
 
         {children}
       </body>
