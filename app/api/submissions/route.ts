@@ -22,7 +22,6 @@ type SubmissionBody = {
   source: string;
   name: string;
   phone: string;
-  email: string;
   appointmentDateTime: string;
   concern: string;
   note: string;
@@ -45,7 +44,6 @@ function normalizeSubmission(body: Record<string, unknown>): SubmissionBody {
     source: toText(body.source) || 'Consultation Modal',
     name: toText(body.name),
     phone: toText(body.phone),
-    email: toText(body.email),
     appointmentDateTime: toText(body.appointmentDateTime),
     concern: toText(body.concern) || toText(body.condition),
     note: toText(body.note) || toText(body.message) || toText(body.msg),
@@ -149,8 +147,8 @@ function isTelecrmConfirmed(data: unknown) {
   // boolean success flag
   if (record.success === true) return true;
 
-  const status = String(record.status || '').toLowerCase();
-  return status === 'created' || status === 'updated' || status === 'success' || status === '200';
+  const status = String(record.status || record.result || '').toLowerCase();
+  return ['accepted', 'created', 'updated', 'success', '200'].includes(status);
 }
 
 async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | null> {
@@ -165,13 +163,11 @@ async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | nu
   const timeout = setTimeout(() => controller.abort(), 15000);
 
   const fields: Record<string, string> = { phone, name: body.name };
-  if (body.email) fields.email = body.email;
 
   const details = [
     `Form Name: ${body.source || 'Website'}`,
     `Name: ${body.name || 'Not specified'}`,
     `Phone: ${body.phone || 'Not specified'}`,
-    `Email: ${body.email || 'Not specified'}`,
     `Condition: ${body.concern || 'Not specified'}`,
     `Appointment DateTime: ${body.appointmentDateTime || 'Not specified'}`,
     `Note: ${body.note || 'Not specified'}`,
@@ -185,7 +181,6 @@ async function pushToTeleCRM(body: SubmissionBody): Promise<TelecrmResponse | nu
       { type: 'SYSTEM_NOTE', text: `Form Name: ${body.source || 'Website'}` },
       { type: 'SYSTEM_NOTE', text: `Name: ${body.name || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `Phone: ${body.phone || 'Not specified'}` },
-      { type: 'SYSTEM_NOTE', text: `Email: ${body.email || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `Condition: ${body.concern || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `Appointment DateTime: ${body.appointmentDateTime || 'Not specified'}` },
       { type: 'SYSTEM_NOTE', text: `Note: ${body.note || 'Not specified'}` },
