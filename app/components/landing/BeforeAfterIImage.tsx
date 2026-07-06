@@ -1,76 +1,62 @@
 import Image from "next/image";
 import { cx, eyebrow, h2, lead, section, wrap } from "./styles";
 
-const beforeAfterPairs = [
-  {
-    before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/5_vcpte1.png",
-    after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/2_nbkgnk.png",
-  },
-  {
-    before: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/3_ilod5l.png",
-    after: "https://res.cloudinary.com/daclbrdse/image/upload/v1782805703/1_psrsbj.png",
-  },
-  {
-    before: "/bfaf.png",
-    after: "/bfaf-8.png",
-  },
+const images = [
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156158/6_omwd1s.png",
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156152/5_zniw5l.png",
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156102/5_c52o0m.png",
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/2_xm5twf.png",
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/3_jjl6sh.png",
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/1_bw9jb1.png",
 ];
 
 export function BeforeAfterIImage() {
-  const beforeAfterImages = [...Array(4)].flatMap(() =>
-    beforeAfterPairs.flatMap(({ before, after }) => [
-      { label: "Before", src: before },
-      { label: "After", src: after },
-    ])
-  );
+  // Duplicate images for smooth infinite scrolling
+  const carouselImages = [...images, ...images];
 
   return (
     <section className={cx(section, "overflow-hidden bg-white")}>
       <div className={wrap}>
         <div className="mx-auto max-w-[760px] text-center">
-          <span className={cx(eyebrow, "mx-auto flex w-fit justify-center before:hidden")}>Before & after</span>
-          <h2 className={cx(h2, "mx-auto")}>Real changes, seen clearly.</h2>
-          <p className={cx(lead, "mx-auto")}>A simple visual row showing the difference treatment can make.</p>
+          <span
+            className={cx(
+              eyebrow,
+              "mx-auto flex w-fit justify-center before:hidden"
+            )}
+          >
+            Gallery
+          </span>
+
+          <h2 className={cx(h2, "mx-auto")}>
+            Real Patient Treatment Results
+          </h2>
+
+          <p className={cx(lead, "mx-auto")}>
+            See actual treatment outcomes from our patients.
+          </p>
         </div>
       </div>
 
-      <div className="mt-[42px] overflow-hidden px-4 max-[760px]:px-3">
-        <div className="flex w-max animate-before-after [animation-duration:34s] hover:[animation-play-state:paused]">
-          {[0, 1].map((group) => (
-            <div className="flex gap-4 pr-4 max-[760px]:gap-3 max-[760px]:pr-3" key={group} aria-hidden={group === 1}>
-              {beforeAfterImages.map((image, index) => (
-                <ImageCard key={`${group}-${image.src}-${index}`} {...image} />
-              ))}
-            </div>
+      <div className="mt-10 overflow-hidden px-4 max-[760px]:px-3">
+        <div className="flex w-max animate-before-after hover:[animation-play-state:paused]">
+          {carouselImages.map((src, index) => (
+            <article
+              key={index}
+              className="mr-4 shrink-0 overflow-hidden rounded-[18px] border border-[#d5eef2] bg-[#effbfc] p-2 shadow-[0_1px_2px_rgba(10,40,40,.06),0_10px_24px_rgba(10,40,40,.08)] max-[760px]:mr-3"
+            >
+              <Image
+                src={src}
+                alt={`Patient Result ${index + 1}`}
+                width={416}
+                height={520}
+                className="block aspect-[4/5] w-[min(70vw,260px)] rounded-[14px] object-cover"
+                sizes="(max-width:760px) 41vw, 260px"
+                priority={index < 6}
+              />
+            </article>
           ))}
         </div>
       </div>
     </section>
-  );
-}
-
-function ImageCard({ label, src }: { label: string; src: string }) {
-  return (
-    <article className="shrink-0 overflow-hidden rounded-[18px] border border-[#d5eef2] bg-[#effbfc] p-2 shadow-[0_1px_2px_rgba(10,40,40,.06),0_10px_24px_rgba(10,40,40,.08)]">
-      <ImagePanel label={label} src={src} />
-    </article>
-  );
-}
-
-function ImagePanel({ label, src }: { label: string; src: string }) {
-  return (
-    <div className="relative w-[min(70vw,260px)] overflow-hidden rounded-[14px] bg-white">
-      <span className="absolute left-3 top-3 z-[1] rounded-full bg-[#14241f]/80 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[.08em] text-white backdrop-blur-sm">
-        {label}
-      </span>
-      <Image
-        alt={`${label} hernia treatment result`}
-        className="block aspect-[4/5] w-full object-cover"
-        height={520}
-        sizes="(max-width: 760px) 41vw, 260px"
-        src={src}
-        width={416}
-      />
-    </div>
   );
 }
