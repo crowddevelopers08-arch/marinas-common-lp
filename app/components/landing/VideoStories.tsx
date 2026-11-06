@@ -18,12 +18,12 @@ const videoStories = [
     description: "Watch short clinic videos to understand the doctor, the care approach and what patients can expect.",
     type: "video/mp4",
   },
-  {
-    src: videos[2],
-    title: "Patient clarity",
-    description: "Watch short clinic videos to understand the doctor, the care approach and what patients can expect.",
-    type: "video/mp4",
-  },
+  // {
+  //   src: videos[2],
+  //   title: "Patient clarity",
+  //   description: "Watch short clinic videos to understand the doctor, the care approach and what patients can expect.",
+  //   type: "video/mp4",
+  // },
   // {
   //   src: "https://ik.imagekit.io/tpucbav8z/marinias1_squished.mp4",
   //   title: "Marinas care",

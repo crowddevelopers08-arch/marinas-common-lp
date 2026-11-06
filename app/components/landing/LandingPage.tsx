@@ -51,7 +51,7 @@ export default function LandingPage() {
         <AwarenessSections />
         <Surgeon />
         <BenefitsStepsVideos />
-        <VideoStories />
+        {/* <VideoStories /> */}
         <ReviewsServicesLocations />
         <ClinicServices />
         {/* <ClinicLocations /> */}

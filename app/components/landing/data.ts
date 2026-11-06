@@ -1,13 +1,13 @@
 export const logo =
-  "https://res.cloudinary.com/daclbrdse/image/upload/v1782811583/Marina-logo-b_uvila0.png";
+  "/Marina-logo.png";
 
 export const doctor =
-  "https://res.cloudinary.com/dthj7fakc/image/upload/v1781681953/dr-preethi-mrinalini_wmgdmk.webp";
+  "/doctor-1.png";
 
 export const videos = [
-  "https://res.cloudinary.com/dthj7fakc/video/upload/v1781762970/video1_kaazse.mp4",
-  "https://res.cloudinary.com/dthj7fakc/video/upload/v1781762972/video2_qtujea.mp4",
-  "https://res.cloudinary.com/dthj7fakc/video/upload/v1781762972/video3_rpzmq3.mp4",
+  "/video-1.mp4",
+  "/video-2.mp4",
+  // "/video-3.mp4",
 ];
 
 export const conditions = [

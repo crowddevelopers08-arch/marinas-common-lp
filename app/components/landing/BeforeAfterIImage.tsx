@@ -2,12 +2,12 @@ import Image from "next/image";
 import { cx, eyebrow, h2, lead, section, wrap } from "./styles";
 
 const images = [
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156158/6_omwd1s.png",
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156152/5_zniw5l.png",
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156102/5_c52o0m.png",
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/2_xm5twf.png",
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/3_jjl6sh.png",
-  "https://res.cloudinary.com/dxntva1vn/image/upload/v1783156095/1_bw9jb1.png",
+  "/bf-1.png",
+  "/bf-2.png",
+  "/bf-3.png",
+  "/bf-4.png",
+  "/bf-6.png",
+  "/bf-7.png",
 ];
 
 export function BeforeAfterIImage() {
