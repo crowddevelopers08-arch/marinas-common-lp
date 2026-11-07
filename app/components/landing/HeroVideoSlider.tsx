@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { cardShadow, cx } from "./styles";
 
 const heroVideos = [
-  "/video-1.mp4",
-  "/video-2.mp4",
+  "https://res.cloudinary.com/dxntva1vn/video/upload/v1794027020/video-2_vlasgw.mp4",
+  "https://res.cloudinary.com/dxntva1vn/video/upload/v1794027019/video-1_clrf7v.mp4",
 ];
 
 export function HeroVideoSlider({ className }: { className?: string }) {

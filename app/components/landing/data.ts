@@ -1,12 +1,12 @@
 export const logo =
-  "/Marina-logo.png";
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1794027007/Marina-logo_tjcywr.png";
 
 export const doctor =
-  "/doctor-1.png";
+  "https://res.cloudinary.com/dxntva1vn/image/upload/v1794027007/doctor-1_c8ms3x.png";
 
 export const videos = [
-  "/video-1.mp4",
-  "/video-2.mp4",
+  "https://res.cloudinary.com/dxntva1vn/video/upload/v1794027020/video-2_vlasgw.mp4",
+  "https://res.cloudinary.com/dxntva1vn/video/upload/v1794027019/video-1_clrf7v.mp4",
   // "/video-3.mp4",
 ];
 
